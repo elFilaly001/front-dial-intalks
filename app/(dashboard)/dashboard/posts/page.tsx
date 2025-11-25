@@ -1,0 +1,10 @@
+"use client";
+import PostsGrid from "@/components/media/PostsGrid";
+
+export default function Page() {
+    return (
+        <div className="p-6">
+            <PostsGrid />
+        </div>
+    );
+}
