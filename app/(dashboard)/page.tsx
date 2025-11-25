@@ -6,12 +6,6 @@ export default function Page() {
     <main className="p-6">
       <h1 className="text-3xl font-bold">Welcome to InTalks</h1>
       <p className="mt-3 text-neutral-600">This is your workspace. Use the sidebar to open different dashboard sections.</p>
-
-      <section className="mt-6">
-        <Suspense fallback={<div>Loading dashboard…</div>}>
-          <DashboardTabsClient />
-        </Suspense>
-      </section>
     </main>
   );
 }
