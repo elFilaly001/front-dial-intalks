@@ -1,0 +1,5445 @@
+{
+  "influencers": [
+    {
+      "_id": "67514ede3da334485badc0ba",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Leagues & Federations",
+          "root": "682c75657bdfe341b6c5eb84",
+          "root_name": "Sports",
+          "id": "682c7a0e40e028b88235be6f",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75657bdfe341b6c5eb84": {
+          "id": "682c75657bdfe341b6c5eb84",
+          "name": "Sports",
+          "niches": {
+            "682c7a0e40e028b88235be6f": {
+              "id": "682c7a0e40e028b88235be6f",
+              "name": "Leagues & Federations",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/14538188891.jpg",
+      "full_name": "Fédération Royale Marocaine de Football",
+      "biography": "The Fédération Royale Marocaine de Football (FRMF) is dedicated to promoting and developing football in Morocco. Their social media presence highlights national team achievements, player spotlights, and community engagement, fostering a strong connection with fans. Content themes include match highlights, player interviews, and recruitment opportunities, showcasing their commitment to excellence in sports. The brand actively engages with its audience through interactive campaigns and updates on national events, emphasizing unity and pride in Moroccan football.",
+      "follower_count": 7194884,
+      "typologie": null,
+      "title": "Fédération Royale Marocaine de Football: Champions of Moroccan Football",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "5.9M",
+          "profile_url": "https://www.instagram.com/equipedumaroc/",
+          "score": "85.5",
+          "score_raw": 85.54545386829322,
+          "growth": {
+            "value": "-0.52 %",
+            "type": "lower"
+          },
+          "engagement_rate": "1.1%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "589.4K",
+          "profile_url": "https://www.twitter.com/frmfofficiel/",
+          "score": "85.6",
+          "score_raw": 85.61651861028577,
+          "growth": {
+            "value": "+0.13 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "466.5K",
+          "profile_url": "https://www.tiktok.com/@equipedumaroc/",
+          "score": "89.8",
+          "score_raw": 89.75604547504929,
+          "growth": {
+            "value": "+6.21 %",
+            "type": "greater"
+          },
+          "engagement_rate": "4.3%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "371K",
+          "profile_url": "https://www.youtube.com/channel/UCbQlejA3nCVMq-9qw-oZEtQ",
+          "score": "83",
+          "score_raw": 82.97130809993848,
+          "growth": {
+            "value": "+1.51 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.4%",
+          "profile_views": "-"
+        },
+        "linkedin": {
+          "network": "linkedin",
+          "follower_count": "1.4K",
+          "profile_url": "https://www.linkedin.com/company/federation-royale-marocaine-de-football/",
+          "score": "25.4",
+          "score_raw": 25.363281051787233,
+          "growth": {
+            "value": "+8.55 %",
+            "type": "greater"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "9 186",
+        "raw": 9186.032763015668,
+        "tier": 2
+      },
+      "growth": {
+        "percentage": "+0.05 %",
+        "absolute": "+3.8K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 1
+      }
+    },
+    {
+      "_id": "6392889a44a6c2032cd52b84",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UC-5_KlNZB24vRngk6fxxKSQ.jpg",
+      "full_name": "La3zawi Family",
+      "biography": "La3zawi Family is a Moroccan YouTube channel focused on family-friendly content, featuring daily videos filled with challenges, pranks, and travel experiences. The channel showcases a vibrant family dynamic, engaging viewers with entertaining adventures and relatable moments. Key themes include luxury purchases, fun challenges, and heartfelt family interactions, appealing to a broad audience interested in lifestyle and entertainment. The channel encourages subscriptions and collaborations, fostering a community around shared family experiences.",
+      "follower_count": 5080000,
+      "typologie": null,
+      "title": "La3zawi Family: Daily Adventures and Family Challenges",
+      "age": 25.73385238647461,
+      "gender": 1,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "5.1M",
+          "profile_url": "https://www.youtube.com/channel/UC-5_KlNZB24vRngk6fxxKSQ",
+          "score": "92.1",
+          "score_raw": 92.11632210279735,
+          "growth": {
+            "value": "+2.31 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "9 147",
+        "raw": 9146.807672605211,
+        "tier": 2
+      },
+      "growth": {
+        "percentage": "+2.30 %",
+        "absolute": "+114K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 2
+      }
+    },
+    {
+      "_id": "6394b291eaa4670385af7395",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCncEofBivOYrYcKZJxuHd2A.jpg",
+      "full_name": "SKIPPERS",
+      "biography": "SKIPPERS is an animation studio focused on creating engaging and humorous animated content, particularly related to gaming and popular culture. Their YouTube channel features a variety of animated shorts that appeal to a young audience, showcasing themes from video games and popular media. The studio encourages viewer interaction and subscription for new content, indicating a strong community engagement strategy.",
+      "follower_count": 10900000,
+      "typologie": null,
+      "title": "Creative Animation Studio Specializing in Gaming Content",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "10.9M",
+          "profile_url": "https://www.youtube.com/channel/UCncEofBivOYrYcKZJxuHd2A",
+          "score": "82.7",
+          "score_raw": 82.73953805577656,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "9 072",
+        "raw": 9071.547274508095,
+        "tier": 2
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6822dedfadcea14661f21dce"],
+      "rank": {
+        "rank": 4
+      }
+    },
+    {
+      "_id": "6385388874433c517ea8da46",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Soccer Teams",
+          "root": "682c75657bdfe341b6c5eb84",
+          "root_name": "Sports",
+          "id": "682c79e940e028b88235bd2c",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75657bdfe341b6c5eb84": {
+          "id": "682c75657bdfe341b6c5eb84",
+          "name": "Sports",
+          "niches": {
+            "682c79e940e028b88235bd2c": {
+              "id": "682c79e940e028b88235bd2c",
+              "name": "Soccer Teams",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/576148010.jpg",
+      "full_name": "Wydad Athletic Club",
+      "biography": "Wydad Athletic Club, the most successful football club in Morocco, boasts a vibrant social media presence that highlights its achievements, player signings, and matchday excitement. The club engages fans with dynamic content, including player announcements, match highlights, and community support messages. The hashtag #DimaWydad is consistently used to foster a sense of unity among supporters. The club's social media strategy effectively combines promotional content with community engagement, showcasing its rich history and commitment to excellence.",
+      "follower_count": 3187385,
+      "typologie": null,
+      "title": "Wydad Athletic Club: Morocco's Most Titled Football Team",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "2.4M",
+          "profile_url": "https://www.instagram.com/wacofficiel/",
+          "score": "94.1",
+          "score_raw": 94.14055690631535,
+          "growth": {
+            "value": "+1.19 %",
+            "type": "greater"
+          },
+          "engagement_rate": "3.2%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "547.1K",
+          "profile_url": "https://www.twitter.com/wacofficiel/",
+          "score": "87.9",
+          "score_raw": 87.8979417859122,
+          "growth": {
+            "value": "+0.14 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "272K",
+          "profile_url": "https://www.youtube.com/channel/UCf65dQ8syRzRPpALKZQUcOQ",
+          "score": "79.8",
+          "score_raw": 79.84931997686866,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.8%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "9 071",
+        "raw": 9070.661874834583,
+        "tier": 2
+      },
+      "growth": {
+        "percentage": "+0.91 %",
+        "absolute": "+28.8K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fbeb8c28940c5bf3a356"],
+      "rank": {
+        "rank": 5
+      }
+    },
+    {
+      "_id": "639159f5cd0cc5bb11abcd22",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "TV Channels",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d840e028b88235a960",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d840e028b88235a960": {
+              "id": "682c77d840e028b88235a960",
+              "name": "TV Channels",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UClozwh5URilIQpDFeXch8qw.jpg",
+      "full_name": "2M",
+      "biography": "2M is a Moroccan public television channel offering a wide range of general content. Its social media presence emphasizes local news, cultural programming, and entertainment, engaging audiences with interactive posts and updates on national events. The channel showcases various themes, including sports, music, and societal issues, while promoting Moroccan culture and heritage. With a focus on accessibility, 2M is available through multiple platforms, ensuring a broad reach within Morocco and beyond.",
+      "follower_count": 15022121,
+      "typologie": null,
+      "title": "2M: Morocco's Premier Public Television Channel",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "10M",
+          "profile_url": "https://www.youtube.com/channel/UClozwh5URilIQpDFeXch8qw",
+          "score": "80.5",
+          "score_raw": 80.53812531010152,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "4.1M",
+          "profile_url": "https://www.instagram.com/2mtv/",
+          "score": "86.1",
+          "score_raw": 86.0534637548399,
+          "growth": {
+            "value": "+0.36 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "945K",
+          "profile_url": "https://www.twitter.com/2minteractive/",
+          "score": "82.1",
+          "score_raw": 82.0590356937415,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 908",
+        "raw": 8908.37854885665,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.10 %",
+        "absolute": "+14.5K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 6
+      }
+    },
+    {
+      "_id": "657b39fd67f760b935ec5ee1",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4632788797.jpg",
+      "full_name": "Welovebuzz News",
+      "biography": "Welovebuzz is a vibrant Moroccan digital newsroom catering to the youth. It focuses on trending news, cultural events, and social media highlights, often featuring engaging video content. The brand excels in creating relatable and entertaining posts that resonate with young Moroccans, showcasing local stories, humor, and community engagement. Their social media presence is characterized by high engagement rates, particularly on TikTok and Instagram, where they share viral videos and interactive content that reflects the interests and concerns of the new generation.",
+      "follower_count": 2473809,
+      "typologie": null,
+      "title": "Welovebuzz: Morocco's Youth-Centric Digital Newsroom",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.4M",
+          "profile_url": "https://www.instagram.com/welovebuzznews/",
+          "score": "87",
+          "score_raw": 87.04165768859298,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "1%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "788K",
+          "profile_url": "https://www.youtube.com/channel/UCRb9ePdApcJ26L13tGQWptw",
+          "score": "59.6",
+          "score_raw": 59.62528359052327,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "313.4K",
+          "profile_url": "https://www.tiktok.com/@welovebuzz/",
+          "score": "83.1",
+          "score_raw": 83.13894635072293,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.6%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 904",
+        "raw": 8904.068859889801,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fcd08c28940c5bf3ae5e"],
+      "rank": {
+        "rank": 7
+      }
+    },
+    {
+      "_id": "657b236b67f760b935eba3bf",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Creator-Owned Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79b240e028b88235b91e",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79b240e028b88235b91e": {
+              "id": "682c79b240e028b88235b91e",
+              "name": "Creator-Owned Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/1642559073.jpg",
+      "full_name": "Rawaa Beauty",
+      "biography": "Rawaa Beauty is a Moroccan beauty brand focused on makeup, lifestyle, and modest fashion. The brand showcases makeup tutorials, outfit inspirations, and skincare tips, emphasizing self-acceptance and empowerment. With a strong presence on Instagram and TikTok, Rawaa Beauty engages its audience through relatable content and product recommendations. The brand promotes its own line, @by_rawaabeauty, and collaborates with various fashion and beauty brands, creating a vibrant community around beauty and lifestyle.",
+      "follower_count": 5856730,
+      "typologie": null,
+      "title": "Rawaa Beauty: Empowering Women Through Makeup and Fashion",
+      "age": null,
+      "gender": 0,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "3.9M",
+          "profile_url": "https://www.instagram.com/rawaa_beauty/",
+          "score": "82",
+          "score_raw": 81.97032580872369,
+          "growth": {
+            "value": "-0.08 %",
+            "type": "lower"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.4M",
+          "profile_url": "https://www.youtube.com/channel/UCBob6Y5eqKUUA87n-8pjupQ",
+          "score": "21",
+          "score_raw": 21.00074415954305,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "631.5K",
+          "profile_url": "https://www.tiktok.com/@rawaa_beauty/",
+          "score": "84.2",
+          "score_raw": 84.23041838343224,
+          "growth": {
+            "value": "+0.32 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.4%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 881",
+        "raw": 8880.93625286835,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "-0.02 %",
+        "absolute": "-1.1K",
+        "type": "lower"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": true,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [
+        "6775fc0a8c28940c5bf3a470",
+        "68cd993b262d1ba5c97a4d6e"
+      ],
+      "rank": {
+        "rank": 8
+      }
+    },
+    {
+      "_id": "657b46a467f760b935ecd729",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/8550762528.jpg",
+      "full_name": "Moroccan Rap Lyrics / MRL ©",
+      "biography": "Moroccan Rap Lyrics (MRL) is a vibrant social media brand dedicated to promoting Moroccan rap culture. With a strong presence on Instagram and TikTok, MRL shares engaging content featuring popular Moroccan artists, song lyrics, and music-related discussions. The brand emphasizes community interaction, encouraging followers to share their thoughts on tracks and artists. MRL's posts often highlight trending songs and collaborations, making it a go-to source for rap enthusiasts in Morocco and beyond.",
+      "follower_count": 1485723,
+      "typologie": null,
+      "title": "Moroccan Rap Lyrics: Your Source for Hip-Hop Culture",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "857K",
+          "profile_url": "https://www.instagram.com/moroccanrap_lyrics/",
+          "score": "91.4",
+          "score_raw": 91.35634175416932,
+          "growth": {
+            "value": "+0.30 %",
+            "type": "greater"
+          },
+          "engagement_rate": "3.8%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "628.7K",
+          "profile_url": "https://www.tiktok.com/@moroccanrap_lyrics/",
+          "score": "87.6",
+          "score_raw": 87.5563153893082,
+          "growth": {
+            "value": "+0.49 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.9%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 871",
+        "raw": 8871.132237812704,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.38 %",
+        "absolute": "+5.7K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 9
+      }
+    },
+    {
+      "_id": "65243fb586a0205d52469e53",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/6924974772.jpg",
+      "full_name": "TFT Morocco",
+      "biography": "TFT Morocco serves as a vibrant media outlet for the Moroccan diaspora, focusing on sports news, cultural events, and community engagement. Their social media presence highlights Moroccan athletes, particularly in football, and covers significant events like the FIFA Club World Cup. The brand emphasizes visual storytelling through photos and videos, fostering a sense of pride and connection among Moroccans worldwide. They also engage in discussions about national achievements and cultural heritage, appealing to a diverse audience interested in Moroccan identity.",
+      "follower_count": 995736,
+      "typologie": null,
+      "title": "TFT Morocco: Celebrating Moroccan Sports and Culture Worldwide",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "647.7K",
+          "profile_url": "https://www.instagram.com/tft_morocco/",
+          "score": "93.3",
+          "score_raw": 93.31537890576128,
+          "growth": {
+            "value": "+10.32 %",
+            "type": "fire"
+          },
+          "engagement_rate": "7.3%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "230.1K",
+          "profile_url": "https://www.tiktok.com/@tft_morocco/",
+          "score": "75.2",
+          "score_raw": 75.23934162676927,
+          "growth": {
+            "value": "-0.15 %",
+            "type": "lower"
+          },
+          "engagement_rate": "0.4%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "117.9K",
+          "profile_url": "https://www.twitter.com/tft_morocco/",
+          "score": "89.7",
+          "score_raw": 89.73037507582336,
+          "growth": {
+            "value": "+0.73 %",
+            "type": "greater"
+          },
+          "engagement_rate": "2%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 871",
+        "raw": 8870.849826540136,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+6.60 %",
+        "absolute": "+61.7K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["67ef48c4fd94bba37b69ba17"],
+      "rank": {
+        "rank": 10
+      }
+    },
+    {
+      "_id": "657b55ab67f760b935ed52df",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Creator-Owned Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79b240e028b88235b91e",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79b240e028b88235b91e": {
+              "id": "682c79b240e028b88235b91e",
+              "name": "Creator-Owned Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/7359972040.jpg",
+      "full_name": "ChicShop by Sanae",
+      "biography": "ChicShop by Sanae specializes in traditional Moroccan clothing, particularly jellabas and caftans. The brand's social media presence showcases a blend of fashion, lifestyle, and personal anecdotes, engaging a diverse audience. Posts often highlight family moments, local collaborations, and fashion tips, reflecting a strong connection to Moroccan culture. The brand actively promotes its products through visually appealing content and customer interactions, fostering a community around Moroccan fashion and lifestyle.",
+      "follower_count": 2099535,
+      "typologie": null,
+      "title": "ChicShop by Sanae: Your Destination for Moroccan Fashion",
+      "age": null,
+      "gender": 0,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.7M",
+          "profile_url": "https://www.instagram.com/chicshop_by_sanae/",
+          "score": "91.3",
+          "score_raw": 91.30504399644254,
+          "growth": {
+            "value": "+2.72 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.9%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "312.4K",
+          "profile_url": "https://www.tiktok.com/@chicshopbysanae/",
+          "score": "80.6",
+          "score_raw": 80.63649642501129,
+          "growth": {
+            "value": "+0.42 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "102K",
+          "profile_url": "https://www.youtube.com/channel/UCzwnOUpclsIOFUQk2_C1tSA",
+          "score": "19.1",
+          "score_raw": 19.064464489781127,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 861",
+        "raw": 8860.637577947933,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+2.20 %",
+        "absolute": "+45.3K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fdc58c28940c5bf3b432"],
+      "rank": {
+        "rank": 11
+      }
+    },
+    {
+      "_id": "6392734044a6c2032cd4f809",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "TV Channels",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d840e028b88235a960",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d840e028b88235a960": {
+              "id": "682c77d840e028b88235a960",
+              "name": "TV Channels",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCVad7F4_ZuILXyBsBj-WEnQ.jpg",
+      "full_name": "MBC5",
+      "biography": "MBC5 is a Moroccan entertainment channel focusing on family-friendly content from the Maghreb region. Its social media presence highlights popular series like 'أمي' and 'يوم ملقاك', showcasing dramatic narratives that resonate with local audiences. The channel actively engages viewers through interactive posts and updates on show timings, fostering a community around its programming. MBC5 also promotes its content across platforms like YouTube, Instagram, and TikTok, emphasizing accessibility and viewer interaction.",
+      "follower_count": 5477640,
+      "typologie": null,
+      "title": "MBC5: Your Family Entertainment Hub in Morocco",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "2.2M",
+          "profile_url": "https://www.youtube.com/channel/UCVad7F4_ZuILXyBsBj-WEnQ",
+          "score": "77.3",
+          "score_raw": 77.25627404265322,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.6M",
+          "profile_url": "https://www.instagram.com/mbc5tv/",
+          "score": "85.7",
+          "score_raw": 85.66955466281748,
+          "growth": {
+            "value": "+1.32 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "1.6M",
+          "profile_url": "https://www.tiktok.com/@mbc5/",
+          "score": "86.1",
+          "score_raw": 86.07292555205517,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "13.8K",
+          "profile_url": "https://www.twitter.com/mbc5tv/",
+          "score": "71.8",
+          "score_raw": 71.81544889231076,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 848",
+        "raw": 8847.901701525469,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.39 %",
+        "absolute": "+21.4K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fcd38c28940c5bf3ae6e"],
+      "rank": {
+        "rank": 12
+      }
+    },
+    {
+      "_id": "65093d0cac00dee1a45e6fef",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4772557607.jpg",
+      "full_name": "Welovebuzz",
+      "biography": "Welovebuzz is a Moroccan social media brand focused on humor and entertainment, primarily through memes and relatable content. Their posts often feature trending topics, cultural references, and light-hearted commentary, appealing to a young audience. The brand engages users with a mix of humorous videos and memes, fostering a community around shared experiences and laughter. Their content is predominantly in Arabic, reflecting local culture and humor, making it highly relatable for Moroccan users.",
+      "follower_count": 3993007,
+      "typologie": null,
+      "title": "Welovebuzz: Your Daily Dose of Moroccan Memes and Humor",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "3.4M",
+          "profile_url": "https://www.instagram.com/welovebuzz/",
+          "score": "79.4",
+          "score_raw": 79.4219296265741,
+          "growth": {
+            "value": "-0.21 %",
+            "type": "lower"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "546.3K",
+          "profile_url": "https://www.tiktok.com/@welovebuzzar/",
+          "score": "86.2",
+          "score_raw": 86.17143726509443,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "1.6%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 828",
+        "raw": 8828.386272846674,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "-0.19 %",
+        "absolute": "-7.4K",
+        "type": "lower"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": true,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fccb8c28940c5bf3ae36"],
+      "rank": {
+        "rank": 13
+      }
+    },
+    {
+      "_id": "6391e9e32d3433e6a8d920de",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4364480498.jpg",
+      "full_name": "Hespress - هسبريس",
+      "biography": "Hespress is Morocco's leading online news platform, providing timely updates on national and international events. The brand focuses on diverse content themes, including politics, sports, culture, and social issues, engaging a wide audience through multimedia formats. With a strong presence on platforms like Instagram, TikTok, YouTube, and Twitter, Hespress emphasizes real-time news delivery and community interaction, making it a go-to source for Moroccan citizens seeking reliable information.",
+      "follower_count": 14881855,
+      "typologie": null,
+      "title": "Hespress: Morocco's Premier Online News Source",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "6.5M",
+          "profile_url": "https://www.instagram.com/hespress/",
+          "score": "86.6",
+          "score_raw": 86.6479902400569,
+          "growth": {
+            "value": "+0.45 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "4.4M",
+          "profile_url": "https://www.youtube.com/channel/UCvyivffb2WwNKonKiLwVAEQ",
+          "score": "84",
+          "score_raw": 84.02553723656652,
+          "growth": {
+            "value": "+0.48 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "2.9M",
+          "profile_url": "https://www.twitter.com/hespress/",
+          "score": "87",
+          "score_raw": 87.02067897774074,
+          "growth": {
+            "value": "+0.08 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "1.1M",
+          "profile_url": "https://www.tiktok.com/@hespress/",
+          "score": "77.7",
+          "score_raw": 77.70671069310762,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 802",
+        "raw": 8801.919292491082,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.35 %",
+        "absolute": "+52.4K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 14
+      }
+    },
+    {
+      "_id": "63926ac944a6c2032cd4e492",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCOhHFq20n5Crcg-13BM7v_w.jpg",
+      "full_name": "Younes El Aguid",
+      "biography": "Younes El Aguid, through Marbouha TV, focuses on topics relevant to Moroccan and Arab women and families. The content includes cooking, health, fashion, beauty, entertainment, and agriculture, aiming to engage and inform both men and women. The brand's social media presence is characterized by high engagement on YouTube, with posts showcasing personal experiences, celebrations, and family life, appealing to a diverse audience interested in lifestyle and cultural themes.",
+      "follower_count": 1819850,
+      "typologie": null,
+      "title": "Marbouha TV: Celebrating Moroccan Family Life and Culture",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.8M",
+          "profile_url": "https://www.youtube.com/channel/UCOhHFq20n5Crcg-13BM7v_w",
+          "score": "88.9",
+          "score_raw": 88.93114964437846,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "1.1%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "29.9K",
+          "profile_url": "https://www.instagram.com/marbouha_tv/",
+          "score": "70.6",
+          "score_raw": 70.62598988473945,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.6%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 796",
+        "raw": 8796.143129458193,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 15
+      }
+    },
+    {
+      "_id": "65109e9fac00dee1a4991357",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/2277534748.jpg",
+      "full_name": "MR-STARNEWS",
+      "biography": "MR-STARNEWS is the leading Moroccan and Arab Instagram page, showcasing trending reactions, celebrity news, and cultural events. The content primarily revolves around entertainment, featuring reactions to popular moments and updates on public figures. With high engagement metrics, the brand effectively captures the interests of its audience, focusing on relatable and entertaining themes that resonate with Moroccan and Arab viewers.",
+      "follower_count": 3534074,
+      "typologie": null,
+      "title": "Leading Moroccan and Arab Entertainment Hub on Instagram",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "3.5M",
+          "profile_url": "https://www.instagram.com/starnews.officiel/",
+          "score": "89",
+          "score_raw": 88.99852884307184,
+          "growth": {
+            "value": "+0.07 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 794",
+        "raw": 8793.960037210149,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.07 %",
+        "absolute": "+2.6K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fd998c28940c5bf3b1b8"],
+      "rank": {
+        "rank": 16
+      }
+    },
+    {
+      "_id": "6435c97948ae59914936e7eb",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Creator-Owned Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79b240e028b88235b91e",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79b240e028b88235b91e": {
+              "id": "682c79b240e028b88235b91e",
+              "name": "Creator-Owned Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/671998860.jpg",
+      "full_name": "Bamohamed Amina",
+      "biography": "Amina Bamo, based in Morocco, showcases a vibrant lifestyle through engaging social media content. Her posts often highlight personal milestones, beauty tutorials, and travel experiences, particularly in stunning locations like Cappadocia. With a focus on beauty and self-expression, she connects with her audience through relatable content and interactive makeup sessions. Her Instagram features a mix of personal celebrations and beauty product endorsements, reflecting her expertise in lifestyle and beauty trends.",
+      "follower_count": 1168968,
+      "typologie": null,
+      "title": "Moroccan Beauty Influencer and Lifestyle Creator Amina Bamo",
+      "age": 30.044767379760742,
+      "gender": 0,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1M",
+          "profile_url": "https://www.instagram.com/aminabamo/",
+          "score": "89.4",
+          "score_raw": 89.40483781828799,
+          "growth": {
+            "value": "+0.08 %",
+            "type": "greater"
+          },
+          "engagement_rate": "3.9%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "154K",
+          "profile_url": "https://www.youtube.com/channel/UCxFhb9WKLk6Zo7zHN5Ry2Ig",
+          "score": "20.2",
+          "score_raw": 20.187749448501364,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 785",
+        "raw": 8785.491755650106,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.07 %",
+        "absolute": "+858",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 17
+      }
+    },
+    {
+      "_id": "657f478667665038ee9ad844",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Advocacy Groups",
+          "root": "682c75397bdfe341b6c5cb43",
+          "root_name": "Nonprofit",
+          "id": "682c780b40e028b88235a9cd",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75397bdfe341b6c5cb43": {
+          "id": "682c75397bdfe341b6c5cb43",
+          "name": "Nonprofit",
+          "niches": {
+            "682c780b40e028b88235a9cd": {
+              "id": "682c780b40e028b88235a9cd",
+              "name": "Advocacy Groups",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCASAOTD6fMPEg8jmO4nPblQ.jpg",
+      "full_name": "Sheikh Said Al-Kamali",
+      "biography": "Sheikh Said Al-Kamali is a Moroccan Islamic scholar known for his motivational and positive content across social media platforms. His posts focus on religious teachings, personal development, and moral guidance, attracting a large audience interested in spirituality and self-improvement. With millions of followers on YouTube and Facebook, he shares stories from Islamic history, practical advice, and reflections on faith, aiming to inspire and uplift his community.",
+      "follower_count": 3568904,
+      "typologie": null,
+      "title": "Sheikh Said Al-Kamali: Inspiring Islamic Scholar and Motivational Speaker",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "2.5M",
+          "profile_url": "https://www.youtube.com/channel/UCASAOTD6fMPEg8jmO4nPblQ",
+          "score": "82.6",
+          "score_raw": 82.63531677649195,
+          "growth": {
+            "value": "+0.30 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "966.3K",
+          "profile_url": "https://www.instagram.com/sheikh_elkamali/",
+          "score": "89.6",
+          "score_raw": 89.57059630140519,
+          "growth": {
+            "value": "+3.47 %",
+            "type": "greater"
+          },
+          "engagement_rate": "1.2%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "62.6K",
+          "profile_url": "https://www.twitter.com/said_alkamli/",
+          "score": "9.1",
+          "score_raw": 9.059257117885092,
+          "growth": {
+            "value": "-0.20 %",
+            "type": "lower"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 765",
+        "raw": 8764.573238323977,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+1.12 %",
+        "absolute": "+39.4K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 18
+      }
+    },
+    {
+      "_id": "652468a386a0205d5246db06",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/1008035730.jpg",
+      "full_name": "Elbotola",
+      "biography": "Elbotola is Morocco's leading sports news platform, focusing on football updates, player transfers, and match highlights. Their social media presence is vibrant, featuring engaging posts about local and international football events, player performances, and fan interactions. The brand excels in delivering timely news and interactive content, such as polls and discussions, fostering a strong community among sports enthusiasts. With a significant following, Elbotola effectively captures the excitement of Moroccan football culture.",
+      "follower_count": 3205492,
+      "typologie": null,
+      "title": "Elbotola: Morocco's Premier Sports News Hub",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "2.3M",
+          "profile_url": "https://www.instagram.com/elbotola/",
+          "score": "89.1",
+          "score_raw": 89.13085769349162,
+          "growth": {
+            "value": "+0.40 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "618K",
+          "profile_url": "https://www.youtube.com/channel/UCeOK-Kblp7K-M9xbAPSL7VQ",
+          "score": "76.2",
+          "score_raw": 76.23375159455848,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "240.8K",
+          "profile_url": "https://www.tiktok.com/@elbotola/",
+          "score": "79.2",
+          "score_raw": 79.22251156213645,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.2%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "25.7K",
+          "profile_url": "https://www.twitter.com/elbotola/",
+          "score": "21.3",
+          "score_raw": 21.303708114503003,
+          "growth": {
+            "value": "-0.03 %",
+            "type": "lower"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 728",
+        "raw": 8728.415577597018,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.29 %",
+        "absolute": "+9.3K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 19
+      }
+    },
+    {
+      "_id": "6395ff552785853b94ecddab",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Big Tech Companies",
+          "root": "682c757b7bdfe341b6c5f7f4",
+          "root_name": "Technology",
+          "id": "682c7a5240e028b88235bfdd",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c757b7bdfe341b6c5f7f4": {
+          "id": "682c757b7bdfe341b6c5f7f4",
+          "name": "Technology",
+          "niches": {
+            "682c7a5240e028b88235bfdd": {
+              "id": "682c7a5240e028b88235bfdd",
+              "name": "Big Tech Companies",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tw/240605430.jpg",
+      "full_name": "inwi",
+      "biography": "inwi is a leading telecommunications operator in Morocco, focusing on mobile, fixed telephony, and internet services. Their social media presence emphasizes innovation, customer engagement, and support for local startups, particularly during events like GITEX Africa. Content themes include product promotions, educational initiatives, and community involvement, showcasing their commitment to enhancing digital connectivity and supporting the Moroccan tech ecosystem.",
+      "follower_count": 1361375,
+      "typologie": null,
+      "title": "inwi: Innovating Telecommunications and Supporting Moroccan Startups",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "518.6K",
+          "profile_url": "https://www.twitter.com/inwi/",
+          "score": "55.3",
+          "score_raw": 55.2802933175291,
+          "growth": {
+            "value": "-0.05 %",
+            "type": "lower"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "480K",
+          "profile_url": "https://www.youtube.com/channel/UC0z2g_qMHEyAmNg_oZDP_kQ",
+          "score": "81.8",
+          "score_raw": 81.7518974630494,
+          "growth": {
+            "value": "+0.11 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "362.8K",
+          "profile_url": "https://www.instagram.com/inwi_maroc/",
+          "score": "85.4",
+          "score_raw": 85.40553265847291,
+          "growth": {
+            "value": "+0.36 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.2%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 726",
+        "raw": 8726.02060472501,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.12 %",
+        "absolute": "+1.6K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc128c28940c5bf3a490"],
+      "rank": {
+        "rank": 20
+      }
+    },
+    {
+      "_id": "6394d74ceaa4670385afb382",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UC0cfiEOVc7Lqt-FiiNbUIyg.jpg",
+      "full_name": "Media Live - ميديا لايف",
+      "biography": "Media Live is a Moroccan digital news platform focused on delivering the latest news with credibility and transparency. Their social media presence emphasizes breaking news, exclusive reports, and updates on various topics, including crime, public safety, and local events. The brand engages its audience through timely posts and interactive content, primarily on platforms like YouTube and TikTok, where they share news clips and updates that resonate with Moroccan viewers. Their content is rich in hashtags relevant to Moroccan culture and current affairs.",
+      "follower_count": 1279614,
+      "typologie": null,
+      "title": "Media Live: Your Source for Breaking Moroccan News",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "890K",
+          "profile_url": "https://www.youtube.com/channel/UC0cfiEOVc7Lqt-FiiNbUIyg",
+          "score": "83.1",
+          "score_raw": 83.11263980874813,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "270.9K",
+          "profile_url": "https://www.tiktok.com/@medialivee/",
+          "score": "85.4",
+          "score_raw": 85.39773044389545,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.7%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "118.7K",
+          "profile_url": "https://www.instagram.com/medialive.ma/",
+          "score": "77.8",
+          "score_raw": 77.78944175049531,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 723",
+        "raw": 8722.732416571023,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 21
+      }
+    },
+    {
+      "_id": "63855da574433c517ea97ae0",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "TV Channels",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d840e028b88235a960",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d840e028b88235a960": {
+              "id": "682c77d840e028b88235a960",
+              "name": "TV Channels",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/6455977034.jpg",
+      "full_name": "Arryadia TV",
+      "biography": "Arryadia is a dedicated Moroccan sports channel that focuses on delivering comprehensive coverage of national and international sports events. Its social media presence emphasizes live broadcasts, match highlights, and player interviews, engaging a passionate audience of sports enthusiasts. The channel showcases various sports, including football, handball, and athletics, while promoting local teams and events. Arryadia aims to be the go-to source for Moroccan sports, fostering community support and pride in national achievements.",
+      "follower_count": 3120727,
+      "typologie": null,
+      "title": "Arryadia: The Premier Moroccan Sports Channel",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.4M",
+          "profile_url": "https://www.instagram.com/arryadiatv/",
+          "score": "88.7",
+          "score_raw": 88.65468799533438,
+          "growth": {
+            "value": "+1.15 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.3M",
+          "profile_url": "https://www.youtube.com/channel/UCRN5ho3UGhUi7ZCBe2G2f2w",
+          "score": "64.5",
+          "score_raw": 64.45959494931378,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "404K",
+          "profile_url": "https://www.twitter.com/arryadiatv/",
+          "score": "76.7",
+          "score_raw": 76.70140782845404,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 717",
+        "raw": 8716.534880022384,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.51 %",
+        "absolute": "+15.8K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fcb08c28940c5bf3ad55"],
+      "rank": {
+        "rank": 22
+      }
+    },
+    {
+      "_id": "63961f672785853b94ed2da5",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Big Tech Companies",
+          "root": "682c757b7bdfe341b6c5f7f4",
+          "root_name": "Technology",
+          "id": "682c7a5240e028b88235bfdd",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c757b7bdfe341b6c5f7f4": {
+          "id": "682c757b7bdfe341b6c5f7f4",
+          "name": "Technology",
+          "niches": {
+            "682c7a5240e028b88235bfdd": {
+              "id": "682c7a5240e028b88235bfdd",
+              "name": "Big Tech Companies",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tw/186006201.jpg",
+      "full_name": "Orange Maroc",
+      "biography": "Orange Maroc is a leading telecommunications operator in Morocco, focusing on digital inclusion and connectivity. Their social media presence emphasizes community engagement, innovation in technology, and support for youth initiatives like Orange Koora Talents. They actively promote their services, including high-speed internet and digital solutions, while participating in events like GITEX Africa. Their commitment to responsible practices and societal impact is evident through various campaigns and partnerships aimed at enhancing digital skills and opportunities.",
+      "follower_count": 1234973,
+      "typologie": null,
+      "title": "Orange Maroc: Empowering Youth Through Digital Innovation",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "649.2K",
+          "profile_url": "https://www.twitter.com/orangemaroc/",
+          "score": "64.2",
+          "score_raw": 64.2311493956826,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "415K",
+          "profile_url": "https://www.youtube.com/channel/UCnweOLpbF1c1wJGxzbSkQ5Q",
+          "score": "76.2",
+          "score_raw": 76.23338396119826,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "171.3K",
+          "profile_url": "https://www.instagram.com/orangemaroc/",
+          "score": "86",
+          "score_raw": 85.9539288406225,
+          "growth": {
+            "value": "+0.64 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.9%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 709",
+        "raw": 8709.430344823293,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.09 %",
+        "absolute": "+1.1K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 23
+      }
+    },
+    {
+      "_id": "65090313ac00dee1a45c4b7f",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Supermarkets",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79a440e028b88235b724",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79a440e028b88235b724": {
+              "id": "682c79a440e028b88235b724",
+              "name": "Supermarkets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/7076483826.jpg",
+      "full_name": "BIM MAROC",
+      "biography": "BIM MAROC is a Moroccan retail brand focused on providing affordable grocery and household products. Their social media presence highlights special promotions, seasonal offers, and essential products for family gatherings, particularly during Ramadan. Posts are bilingual, catering to both Arabic and French-speaking audiences, and emphasize value and convenience. Engagement metrics indicate a strong connection with the community, showcasing a commitment to enhancing family moments through accessible pricing and quality selections.",
+      "follower_count": 1749102,
+      "typologie": null,
+      "title": "Affordable Family Essentials and Promotions at BIM MAROC",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.8M",
+          "profile_url": "https://www.instagram.com/bimstoresmaroc/",
+          "score": "89.1",
+          "score_raw": 89.09595690386604,
+          "growth": {
+            "value": "+1.15 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 701",
+        "raw": 8701.26238335704,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+1.16 %",
+        "absolute": "+20K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 24
+      }
+    },
+    {
+      "_id": "6384945f2097a12dae5dcac2",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tw/129184456.jpg",
+      "full_name": "GOAL ARABIA",
+      "biography": "GOAL ARABIA is a vibrant social media brand focused on football, particularly highlighting Arab players and teams. Their content features match highlights, player performances, and engaging polls, fostering a community of passionate football fans. The brand excels in delivering timely updates and captivating narratives around significant football events, especially those involving Moroccan and Arab players. With a strong following, GOAL ARABIA effectively engages its audience through interactive posts and trending football discussions.",
+      "follower_count": 5648622,
+      "typologie": null,
+      "title": "GOAL ARABIA: Celebrating Arab Football Excellence",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "3.5M",
+          "profile_url": "https://www.twitter.com/goalar/",
+          "score": "87.6",
+          "score_raw": 87.6404201190337,
+          "growth": {
+            "value": "+1.32 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "2.4M",
+          "profile_url": "https://www.tiktok.com/@goalar/",
+          "score": "84.9",
+          "score_raw": 84.9082328991388,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 700",
+        "raw": 8699.957617948978,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.75 %",
+        "absolute": "+42.3K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 25
+      }
+    },
+    {
+      "_id": "6581bab8f1fb4b1a47d23592",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Tourism Promotion Accounts",
+          "root": "682c74267bdfe341b6c54558",
+          "root_name": "City",
+          "id": "682c765b40e028b882356e7a",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74267bdfe341b6c54558": {
+          "id": "682c74267bdfe341b6c54558",
+          "name": "City",
+          "niches": {
+            "682c765b40e028b882356e7a": {
+              "id": "682c765b40e028b882356e7a",
+              "name": "Tourism Promotion Accounts",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/44612634152.jpg",
+      "full_name": "Cheval Essaouira",
+      "biography": "Cheval Essaouira specializes in providing exceptional horse riding experiences in Essaouira, Morocco. Their social media showcases stunning visuals of horses, scenic treks, and the beauty of the region, appealing to horse lovers and travelers alike. The brand emphasizes inclusivity for all riding levels and promotes local tourism through engaging content. Their posts often feature hashtags related to horse riding, travel, and the Moroccan landscape, creating a vibrant community around equestrian activities.",
+      "follower_count": 538006,
+      "typologie": null,
+      "title": "Exceptional Horse Riding Experiences in Essaouira, Morocco",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "538K",
+          "profile_url": "https://www.instagram.com/cheval__essaouira/",
+          "score": "86.2",
+          "score_raw": 86.24557732651009,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "3.2%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 693",
+        "raw": 8692.762891151031,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fbef8c28940c5bf3a3a7"],
+      "rank": {
+        "rank": 26
+      }
+    },
+    {
+      "_id": "657b13c667f760b935eb252a",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/3245756305.jpg",
+      "full_name": "مجلة مشاهير المغرب",
+      "biography": "ETMAROC is a Moroccan digital magazine focused on the latest news in Arab and global entertainment, culture, and events. Their social media presence highlights celebrity news, fashion, and cultural events, showcasing a blend of local and international content. The brand engages audiences with high-profile events like the Cannes Film Festival and features prominent figures in the entertainment industry, emphasizing Moroccan culture and identity.",
+      "follower_count": 1979477,
+      "typologie": null,
+      "title": "ETMAROC: Your Gateway to Moroccan Celebrity Culture",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.2M",
+          "profile_url": "https://www.instagram.com/et_maroc.officiel/",
+          "score": "83.7",
+          "score_raw": 83.65105084129308,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "809.4K",
+          "profile_url": "https://www.tiktok.com/@etmaroc/",
+          "score": "84.4",
+          "score_raw": 84.35893744517787,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.3%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 691",
+        "raw": 8691.327708863633,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 27
+      }
+    },
+    {
+      "_id": "657f0763b524af8089cb41f0",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4282565337.jpg",
+      "full_name": "Moroccan Memes 🎭🇲🇦",
+      "biography": "Moroccan Memes is a vibrant social media brand focused on humorous and satirical content that resonates with Moroccan culture. The brand engages its audience through relatable memes and interactive posts, encouraging likes, comments, and shares. With a strong emphasis on community interaction, it showcases a variety of themes that reflect Moroccan life and humor, appealing to a broad demographic of young adults and teens. The brand's content is characterized by its use of local language and cultural references, fostering a sense of belonging among its followers.",
+      "follower_count": 589123,
+      "typologie": null,
+      "title": "Moroccan Memes: Humor and Satire from Morocco",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "589.1K",
+          "profile_url": "https://www.instagram.com/memes.morocco/",
+          "score": "86.7",
+          "score_raw": 86.65105084129308,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.8%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 685",
+        "raw": 8685.076236426943,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 28
+      }
+    },
+    {
+      "_id": "6391df562d3433e6a8d913a9",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "TV Channels",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d840e028b88235a960",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d840e028b88235a960": {
+              "id": "682c77d840e028b88235a960",
+              "name": "TV Channels",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UC-do1UFNFVRhFA20k1izktQ.jpg",
+      "full_name": "Al Aoula TV",
+      "biography": "Al Aoula TV is a Moroccan public television channel under SNRT, offering a diverse programming lineup that includes news, culture, and entertainment. Its social media presence highlights popular shows like 'Ala Ghafla' and 'Brigade Anti-Gang,' engaging audiences with timely content and interactive posts. The channel aims to cater to Moroccan viewers globally, showcasing local talent and addressing societal issues. The focus on community engagement and cultural representation is evident in their content themes.",
+      "follower_count": 6422668,
+      "typologie": null,
+      "title": "Al Aoula TV: Morocco's Premier Public Broadcasting Channel",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "4.7M",
+          "profile_url": "https://www.youtube.com/channel/UC-do1UFNFVRhFA20k1izktQ",
+          "score": "74.9",
+          "score_raw": 74.90416934241816,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.8M",
+          "profile_url": "https://www.instagram.com/al_aoula/",
+          "score": "86",
+          "score_raw": 85.99246678428936,
+          "growth": {
+            "value": "+0.85 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 681",
+        "raw": 8681.483364290394,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.23 %",
+        "absolute": "+14.7K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc938c28940c5bf3ac29"],
+      "rank": {
+        "rank": 29
+      }
+    },
+    {
+      "_id": "65805452a163406ed2e9fff3",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Consumer Packaged Goods (CPG)",
+          "root": "682c74a97bdfe341b6c5793d",
+          "root_name": "Food & Beverage",
+          "id": "682c774f40e028b88235a549",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74a97bdfe341b6c5793d": {
+          "id": "682c74a97bdfe341b6c5793d",
+          "name": "Food & Beverage",
+          "niches": {
+            "682c774f40e028b88235a549": {
+              "id": "682c774f40e028b88235a549",
+              "name": "Consumer Packaged Goods (CPG)",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCgpNWPOPFrrchWfqfl9KWjg.jpg",
+      "full_name": "Ghazal Channel",
+      "biography": "Ghazal Channel is a Moroccan culinary brand with a strong social media presence, particularly on YouTube and Instagram. The brand specializes in sharing easy and delicious recipes, focusing on Moroccan and international desserts and dishes. With over 1 million subscribers on YouTube, Ghazal engages audiences through visually appealing content, showcasing step-by-step cooking tutorials. The brand emphasizes accessibility in cooking, offering recipes that require minimal ingredients and time, appealing to home cooks and food enthusiasts alike.",
+      "follower_count": 1777647,
+      "typologie": null,
+      "title": "Ghazal Channel: Easy Moroccan Recipes and Desserts",
+      "age": null,
+      "gender": 0,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.1M",
+          "profile_url": "https://www.youtube.com/channel/UCgpNWPOPFrrchWfqfl9KWjg",
+          "score": "66.5",
+          "score_raw": 66.46547969571438,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "543.8K",
+          "profile_url": "https://www.instagram.com/ghazal_channel/",
+          "score": "87.8",
+          "score_raw": 87.84674242331465,
+          "growth": {
+            "value": "+1.85 %",
+            "type": "greater"
+          },
+          "engagement_rate": "1.8%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "214.6K",
+          "profile_url": "https://www.tiktok.com/@ghazal_channel/",
+          "score": "72.9",
+          "score_raw": 72.88977275566121,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.2%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "56",
+          "profile_url": "https://www.twitter.com/ghzlt/",
+          "score": "4.3",
+          "score_raw": 4.288923659675069,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 679",
+        "raw": 8678.53851304475,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.53 %",
+        "absolute": "+9.4K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 30
+      }
+    },
+    {
+      "_id": "65085aa9ac00dee1a456699d",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Beauty Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c793b40e028b88235afb4",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c793b40e028b88235afb4": {
+              "id": "682c793b40e028b88235afb4",
+              "name": "Beauty Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/7058674453.jpg",
+      "full_name": "Yves Rocher Maroc",
+      "biography": "Yves Rocher Maroc specializes in botanical beauty products, emphasizing responsible beauty since 1959. Their social media showcases a variety of skincare and haircare solutions, including the popular Lift Pro-Collagène line. Engaging content features product promotions, skincare tips, and interactive quizzes, fostering community involvement. The brand highlights eco-friendly practices and offers personalized skin diagnostics in-store, appealing to a diverse audience interested in natural beauty solutions.",
+      "follower_count": 425484,
+      "typologie": null,
+      "title": "Yves Rocher Maroc: Botanical Beauty and Eco-Friendly Skincare",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "419K",
+          "profile_url": "https://www.instagram.com/yvesrocherma/",
+          "score": "86.9",
+          "score_raw": 86.89656902411326,
+          "growth": {
+            "value": "+0.25 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.7%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "6.5K",
+          "profile_url": "https://www.youtube.com/channel/UCuRSHtDULNzeWI41d1Ar_lg",
+          "score": "51",
+          "score_raw": 50.95224151441613,
+          "growth": {
+            "value": "+0.31 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.6%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 675",
+        "raw": 8674.759523683453,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.25 %",
+        "absolute": "+1.1K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc2c8c28940c5bf3a4f9"],
+      "rank": {
+        "rank": 31
+      }
+    },
+    {
+      "_id": "6394e672eaa4670385afcb66",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "International NGOs",
+          "root": "682c75397bdfe341b6c5cb43",
+          "root_name": "Nonprofit",
+          "id": "682c77ff40e028b88235a9a2",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75397bdfe341b6c5cb43": {
+          "id": "682c75397bdfe341b6c5cb43",
+          "name": "Nonprofit",
+          "niches": {
+            "682c77ff40e028b88235a9a2": {
+              "id": "682c77ff40e028b88235a9a2",
+              "name": "International NGOs",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCsbCc3yvEX6eyWEt9R1cuZw.jpg",
+      "full_name": "Faysboki TV - Amine iMnir",
+      "biography": "Faysboki TV, led by Amine iMnir, focuses on charitable initiatives and community support, particularly in Morocco. The brand's social media presence highlights fundraising efforts for various humanitarian projects, including disaster relief and support for vulnerable populations. Content themes revolve around generosity, community engagement, and social responsibility, with a strong emphasis on transparency in financial dealings. The audience is likely to be engaged in social causes and community welfare, reflecting a commitment to making a positive impact.",
+      "follower_count": 1150000,
+      "typologie": null,
+      "title": "Faysboki TV: Empowering Communities Through Charity and Solidarity",
+      "age": 23.44590187072754,
+      "gender": 1,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.1M",
+          "profile_url": "https://www.youtube.com/channel/UCsbCc3yvEX6eyWEt9R1cuZw",
+          "score": "86.1",
+          "score_raw": 86.11585469976772,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.4%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 671",
+        "raw": 8671.392545587158,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": true,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 32
+      }
+    },
+    {
+      "_id": "639624fc2785853b94ed3a8c",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Big Tech Companies",
+          "root": "682c757b7bdfe341b6c5f7f4",
+          "root_name": "Technology",
+          "id": "682c7a5240e028b88235bfdd",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c757b7bdfe341b6c5f7f4": {
+          "id": "682c757b7bdfe341b6c5f7f4",
+          "name": "Technology",
+          "niches": {
+            "682c7a5240e028b88235bfdd": {
+              "id": "682c7a5240e028b88235bfdd",
+              "name": "Big Tech Companies",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UC9kHNOUPWzRm7tXHffY-bXw.jpg",
+      "full_name": "OPPO Maroc",
+      "biography": "OPPO Maroc is a leading global brand in smart devices, focusing on innovative smartphones that combine advanced technology with stylish design. Their social media presence emphasizes user engagement through interactive campaigns, showcasing features like AI photography and robust performance. Content themes revolve around capturing moments, durability, and connectivity, appealing to tech-savvy consumers. The brand actively promotes its products through vibrant visuals and user-generated content, fostering a community around the OPPO experience.",
+      "follower_count": 671553,
+      "typologie": null,
+      "title": "OPPO Maroc: Innovating Smart Devices for Every Moment",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "395K",
+          "profile_url": "https://www.youtube.com/channel/UC9kHNOUPWzRm7tXHffY-bXw",
+          "score": "75",
+          "score_raw": 74.95061286034523,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "144.7K",
+          "profile_url": "https://www.instagram.com/oppomorocco/",
+          "score": "83.9",
+          "score_raw": 83.8920372659489,
+          "growth": {
+            "value": "+0.99 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.6%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "130.3K",
+          "profile_url": "https://www.tiktok.com/@oppomorocco/",
+          "score": "85.5",
+          "score_raw": 85.46410288776292,
+          "growth": {
+            "value": "+6.46 %",
+            "type": "greater"
+          },
+          "engagement_rate": "2.2%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "1.6K",
+          "profile_url": "https://www.twitter.com/oppomorocco/",
+          "score": "39.9",
+          "score_raw": 39.90080237139031,
+          "growth": {
+            "value": "+0.26 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 656",
+        "raw": 8655.735099563328,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+1.41 %",
+        "absolute": "+9.3K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fcb78c28940c5bf3add5"],
+      "rank": {
+        "rank": 33
+      }
+    },
+    {
+      "_id": "6526649e8a10cea4b62e0a8a",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Restaurants",
+          "root": "682c74a97bdfe341b6c5793d",
+          "root_name": "Food & Beverage",
+          "id": "682c773d40e028b88235a40b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74a97bdfe341b6c5793d": {
+          "id": "682c74a97bdfe341b6c5793d",
+          "name": "Food & Beverage",
+          "niches": {
+            "682c773d40e028b88235a40b": {
+              "id": "682c773d40e028b88235a40b",
+              "name": "Restaurants",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/27842427372.jpg",
+      "full_name": "9ossos | قصوص",
+      "biography": "9ossos is a Moroccan food guide and community for food lovers, focusing on restaurant recommendations and dining experiences across Morocco. Their social media presence highlights various dining options, including buffets and special events, with engaging posts that showcase local cuisine. The brand emphasizes community engagement and culinary exploration, appealing to food enthusiasts and travelers seeking authentic Moroccan dining experiences.",
+      "follower_count": 1247155,
+      "typologie": null,
+      "title": "Moroccan Food Guide and Community for Culinary Enthusiasts",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "690.6K",
+          "profile_url": "https://www.instagram.com/9ossos/",
+          "score": "83.1",
+          "score_raw": 83.10201896264847,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.5%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "556.6K",
+          "profile_url": "https://www.tiktok.com/@9ossos/",
+          "score": "82.5",
+          "score_raw": 82.53511435053491,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.6%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 650",
+        "raw": 8649.738727753158,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc238c28940c5bf3a4d9"],
+      "rank": {
+        "rank": 34
+      }
+    },
+    {
+      "_id": "63927a0b44a6c2032cd50923",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Consumer Packaged Goods (CPG)",
+          "root": "682c74a97bdfe341b6c5793d",
+          "root_name": "Food & Beverage",
+          "id": "682c774f40e028b88235a549",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74a97bdfe341b6c5793d": {
+          "id": "682c74a97bdfe341b6c5793d",
+          "name": "Food & Beverage",
+          "niches": {
+            "682c774f40e028b88235a549": {
+              "id": "682c774f40e028b88235a549",
+              "name": "Consumer Packaged Goods (CPG)",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCALzzrTv5WSNQ6MP3LmNgTA.jpg",
+      "full_name": "رجاء في البيت",
+      "biography": "Rajae at Home is a Moroccan culinary brand focused on sharing easy and accessible recipes from around the world, particularly traditional Moroccan dishes. The brand's social media presence emphasizes simplicity and affordability, showcasing a variety of recipes that cater to home cooks. Engaging content includes step-by-step cooking videos, ingredient lists, and encouragement for audience interaction through subscriptions and shares. The brand effectively connects with a diverse audience interested in home cooking and cultural cuisine.",
+      "follower_count": 1650000,
+      "typologie": null,
+      "title": "Rajae at Home: Easy Moroccan and Global Recipes for Everyone",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.6M",
+          "profile_url": "https://www.youtube.com/channel/UCALzzrTv5WSNQ6MP3LmNgTA",
+          "score": "84.7",
+          "score_raw": 84.67120755719239,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.7%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 649",
+        "raw": 8648.82146445353,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": true,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 35
+      }
+    },
+    {
+      "_id": "67cccc40c3cb43476211ad91",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Podcasts & Networks",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e940e028b88235a989",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e940e028b88235a989": {
+              "id": "682c77e940e028b88235a989",
+              "name": "Podcasts & Networks",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tt/7278094787911304197.jpg",
+      "full_name": "مجتمع Mujtama",
+      "biography": "Mujtama is a cultural and historical studies community focused on Arab societal issues. Their social media presence emphasizes discussions on religious interpretations, cultural identity, and historical context, featuring podcasts with scholars and researchers. Content themes include Quranic studies, societal development, and the impact of digital transformation on religion. The brand engages audiences interested in cultural discourse and academic insights, fostering a platform for intellectual exchange and community growth.",
+      "follower_count": 1677201,
+      "typologie": null,
+      "title": "Mujtama: Cultural and Historical Insights for Arab Societies",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "720.6K",
+          "profile_url": "https://www.tiktok.com/@mujtama.org/",
+          "score": "87.4",
+          "score_raw": 87.41114790056591,
+          "growth": {
+            "value": "+11.33 %",
+            "type": "fire"
+          },
+          "engagement_rate": "0.4%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "666K",
+          "profile_url": "https://www.youtube.com/channel/UCyWaBrXb9nxvM85P0hghwYg",
+          "score": "85.1",
+          "score_raw": 85.06721362697348,
+          "growth": {
+            "value": "+7.15 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.2%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "290.6K",
+          "profile_url": "https://www.instagram.com/mujtamaorg/",
+          "score": "81",
+          "score_raw": 81.00949944888559,
+          "growth": {
+            "value": "+8.57 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 645",
+        "raw": 8644.830411286663,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+9.05 %",
+        "absolute": "+139K",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 36
+      }
+    },
+    {
+      "_id": "657becba67f760b935f1ee7b",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Creator-Owned Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79b240e028b88235b91e",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79b240e028b88235b91e": {
+              "id": "682c79b240e028b88235b91e",
+              "name": "Creator-Owned Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4093604244.jpg",
+      "full_name": "Maimouni Art Deco 08",
+      "biography": "MAIMOUNI 08 specializes in Moroccan interior design and furniture, showcasing a blend of traditional and modern aesthetics. Their social media presence highlights luxurious Moroccan salons, innovative home decor ideas, and promotional sales events. Engaging content features high-quality visuals of completed projects, customer testimonials, and design tips, appealing to homeowners and design enthusiasts. The brand emphasizes quality craftsmanship and customer service, aiming to transform living spaces into elegant environments.",
+      "follower_count": 1413363,
+      "typologie": null,
+      "title": "MAIMOUNI 08: Luxury Moroccan Interior Design & Furniture Solutions",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "771.8K",
+          "profile_url": "https://www.instagram.com/maimouni_artdeco_08/",
+          "score": "79.9",
+          "score_raw": 79.86013793386958,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "541.6K",
+          "profile_url": "https://www.tiktok.com/@maimouni.artdeco.08/",
+          "score": "81.8",
+          "score_raw": 81.83348848830879,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "100K",
+          "profile_url": "https://www.youtube.com/channel/UCyapG65wW1w8EkwyXDwh_yg",
+          "score": "79.1",
+          "score_raw": 79.0518989843628,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 638",
+        "raw": 8637.9222288921,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fde68c28940c5bf3b70b"],
+      "rank": {
+        "rank": 37
+      }
+    },
+    {
+      "_id": "650ab51dac00dee1a46aa23b",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/4380618984.jpg",
+      "full_name": "Morocco Talks Football",
+      "biography": "Morocco Talks Football is a vibrant hub for Moroccan football enthusiasts, delivering daily news, videos, and photos related to the sport. The brand actively engages its audience with content focused on local and international matches, player highlights, and football events, particularly emphasizing the Moroccan national team and its players. The account encourages interaction through challenges and discussions, fostering a community of passionate fans. Its second account further expands its reach in sharing football-related content.",
+      "follower_count": 927812,
+      "typologie": null,
+      "title": "Moroccan Football News and Highlights Hub",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "927.8K",
+          "profile_url": "https://www.instagram.com/moroccotalksfootball/",
+          "score": "81.9",
+          "score_raw": 81.88323265724824,
+          "growth": {
+            "value": "-0.35 %",
+            "type": "lower"
+          },
+          "engagement_rate": "1.4%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 636",
+        "raw": 8636.107024505105,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "-0.35 %",
+        "absolute": "-3.3K",
+        "type": "lower"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": true,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 38
+      }
+    },
+    {
+      "_id": "657f334db524af8089cc9a4e",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Tourism Boards",
+          "root": "682c759d7bdfe341b6c603c5",
+          "root_name": "Travel & Hospitality",
+          "id": "682c811540e028b882362791",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c759d7bdfe341b6c603c5": {
+          "id": "682c759d7bdfe341b6c603c5",
+          "name": "Travel & Hospitality",
+          "niches": {
+            "682c811540e028b882362791": {
+              "id": "682c811540e028b882362791",
+              "name": "Tourism Boards",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/49087453566.jpg",
+      "full_name": "Morocco Vintage",
+      "biography": "Morocco Vintage showcases the rich cultural heritage and stunning landscapes of Morocco through captivating photography. The brand's social media presence emphasizes both old and new aspects of Moroccan life, featuring vibrant imagery of architecture, traditional practices, and scenic views. Engaging hashtags like #visitmorocco and #moroccotravel highlight its focus on tourism and exploration, appealing to travel enthusiasts and those interested in Moroccan culture.",
+      "follower_count": 178806,
+      "typologie": null,
+      "title": "Captivating Moroccan Heritage Through Vintage Photography",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "176.3K",
+          "profile_url": "https://www.instagram.com/morocco4k/",
+          "score": "86.6",
+          "score_raw": 86.60275454111256,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "22%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "2.5K",
+          "profile_url": "https://www.tiktok.com/@morocco.vintage2/",
+          "score": "6.7",
+          "score_raw": 6.676052440448329,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 616",
+        "raw": 8616.051467205467,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 39
+      }
+    },
+    {
+      "_id": "669a833579e1c8f1b6540004",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Auto Dealership Networks",
+          "root": "682c73fb7bdfe341b6c5347a",
+          "root_name": "Automotive",
+          "id": "682c760540e028b882356a57",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c73fb7bdfe341b6c5347a": {
+          "id": "682c73fb7bdfe341b6c5347a",
+          "name": "Automotive",
+          "niches": {
+            "682c760540e028b882356a57": {
+              "id": "682c760540e028b882356a57",
+              "name": "Auto Dealership Networks",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/53841267314.jpg",
+      "full_name": "Elegance Cars | Casablanca",
+      "biography": "Elegance Cars is a premier car showroom located in Casablanca, Morocco, specializing in luxury and high-performance vehicles. Their social media presence showcases a diverse range of cars, including brands like Mercedes, BMW, and Lamborghini, with a focus on visually appealing content that highlights the beauty and power of each vehicle. Engagement metrics indicate a strong following, with posts often featuring hashtags related to Moroccan culture and automotive enthusiasm, appealing to car lovers and potential buyers in the region.",
+      "follower_count": 243869,
+      "typologie": null,
+      "title": "Luxury Car Showroom in Casablanca - Elegance Cars",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "243.9K",
+          "profile_url": "https://www.instagram.com/elegancecars.ma/",
+          "score": "86.8",
+          "score_raw": 86.84910818436592,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "43.7%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 613",
+        "raw": 8612.73180190305,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc538c28940c5bf3a777"],
+      "rank": {
+        "rank": 40
+      }
+    },
+    {
+      "_id": "6395b16aeaa4670385b0cb07",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Music Labels",
+          "root": "682c74667bdfe341b6c55fc2",
+          "root_name": "Entertainment",
+          "id": "682c76a140e028b882358063",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74667bdfe341b6c55fc2": {
+          "id": "682c74667bdfe341b6c55fc2",
+          "name": "Entertainment",
+          "niches": {
+            "682c76a140e028b882358063": {
+              "id": "682c76a140e028b882358063",
+              "name": "Music Labels",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCd8Hjxd6a92Fv9QUyO8rghw.jpg",
+      "full_name": "Mounir Studio",
+      "biography": "Mounir Studio is a Moroccan music label focused on promoting contemporary Arabic music, particularly in the Chaabi genre. Their social media presence showcases a variety of music videos featuring popular artists, with a strong emphasis on engaging the audience through calls to subscribe and interact. The content often highlights new releases and collaborations, appealing to fans of Arabic pop and traditional music. The brand effectively utilizes platforms like YouTube to reach a wide audience, fostering a community around Moroccan music culture.",
+      "follower_count": 908000,
+      "typologie": null,
+      "title": "Mounir Studio: Promoting Moroccan Chaabi Music and Artists",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "908K",
+          "profile_url": "https://www.youtube.com/channel/UCd8Hjxd6a92Fv9QUyO8rghw",
+          "score": "85.8",
+          "score_raw": 85.82250346085121,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.5%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 611",
+        "raw": 8611.308558927405,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 41
+      }
+    },
+    {
+      "_id": "6394bffeeaa4670385af8bda",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UC1-lSF4PZX0MhSqhv9UIW2A.jpg",
+      "full_name": "Lahcen El Aguid",
+      "biography": "Mhboba TV is a Moroccan family-oriented YouTube channel that showcases Moroccan traditions and daily life. The content primarily revolves around weddings, family gatherings, and cultural celebrations, engaging viewers with heartfelt stories and emotional moments. The channel emphasizes community and familial bonds, often featuring surprises and gifts that highlight Moroccan customs. With a strong focus on cultural heritage, Mhboba TV connects with audiences through relatable experiences and vibrant storytelling.",
+      "follower_count": 1098238,
+      "typologie": null,
+      "title": "Mhboba TV: Celebrating Moroccan Family Traditions and Culture",
+      "age": 11.000858306884766,
+      "gender": 0,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.1M",
+          "profile_url": "https://www.youtube.com/channel/UC1-lSF4PZX0MhSqhv9UIW2A",
+          "score": "86.6",
+          "score_raw": 86.63081338761397,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.7%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "8.2K",
+          "profile_url": "https://www.instagram.com/mhboba.tv/",
+          "score": "6",
+          "score_raw": 6.04306970183124,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 606",
+        "raw": 8605.984088291954,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 42
+      }
+    },
+    {
+      "_id": "676fa8123da334485bbf42d0",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Creator-Owned Brands",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c79b240e028b88235b91e",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c79b240e028b88235b91e": {
+              "id": "682c79b240e028b88235b91e",
+              "name": "Creator-Owned Brands",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tt/6647453075169837061.jpg",
+      "full_name": "Hamza Mon Bb Shop",
+      "biography": "Hamza Mon Bb Shop is a vibrant brand based in Casablanca, Morocco, showcasing a strong presence on TikTok. The content primarily features engaging posts with popular local influencers, emphasizing beauty and lifestyle themes. The brand's social media strategy focuses on collaboration with trending personalities, driving high engagement through likes and shares. The posts often highlight local culture and trends, appealing to a youthful audience interested in fashion and beauty.",
+      "follower_count": 552700,
+      "typologie": null,
+      "title": "Hamza Mon Bb Shop: Casablanca's Trendy Beauty Hub",
+      "age": null,
+      "gender": 1,
+      "is_a_brand": true,
+      "networks": {
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "552.7K",
+          "profile_url": "https://www.tiktok.com/@mon_bb_shop/",
+          "score": "86.4",
+          "score_raw": 86.43931923346373,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "1.9%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 603",
+        "raw": 8602.862438236372,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 43
+      }
+    },
+    {
+      "_id": "63946fc1eaa4670385aefdd9",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Radio Stations",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77f040e028b88235a994",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77f040e028b88235a994": {
+              "id": "682c77f040e028b88235a994",
+              "name": "Radio Stations",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "French",
+        "native": "Français",
+        "id": "fr",
+        "code2": "fr",
+        "slug": "french"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/248690935.jpg",
+      "full_name": "HIT RADIO",
+      "biography": "Hit Radio is Morocco's leading music radio station, known for its vibrant social media presence. The brand focuses on sharing 100% hits, engaging with listeners through giveaways, and promoting local artists. Content themes include music, entertainment, and cultural events, with a strong emphasis on community engagement. The station's platforms feature exclusive interviews, event coverage, and interactive posts that resonate with a youthful audience, making it a central hub for music lovers in Morocco.",
+      "follower_count": 4840969,
+      "typologie": null,
+      "title": "Hit Radio: Morocco's Premier Music Station and Cultural Hub",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.9M",
+          "profile_url": "https://www.instagram.com/hitradioma/",
+          "score": "81.3",
+          "score_raw": 81.25591223582884,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "twitter": {
+          "network": "twitter",
+          "follower_count": "1.3M",
+          "profile_url": "https://www.twitter.com/hitradioma/",
+          "score": "66.4",
+          "score_raw": 66.41778544307573,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "1.1M",
+          "profile_url": "https://www.youtube.com/channel/UCoS0xYkuJq07NU92yFBEfKA",
+          "score": "78.4",
+          "score_raw": 78.44146146380152,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "539.9K",
+          "profile_url": "https://www.tiktok.com/@hitradio.officiel/",
+          "score": "78.6",
+          "score_raw": 78.61057198806986,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 590",
+        "raw": 8589.936740886005,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": ["6775fc208c28940c5bf3a4c1"],
+      "rank": {
+        "rank": 44
+      }
+    },
+    {
+      "_id": "6632667dfe3189ee7520dfdd",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Podcasts & Networks",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e940e028b88235a989",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e940e028b88235a989": {
+              "id": "682c77e940e028b88235a989",
+              "name": "Podcasts & Networks",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCY4N9OvDJapv7hcXO9PK5GQ.jpg",
+      "full_name": "Tabali Youssef",
+      "biography": "THE MOROCCAN DREAM is a dynamic platform focused on sharing inspiring stories and insights from successful Moroccan role models across various fields. The brand emphasizes education, innovation, and cultural identity, engaging audiences through podcasts and video content that address contemporary issues in Morocco. Key themes include health, technology, entrepreneurship, and social challenges, fostering a community of informed and empowered individuals. The brand's social media presence is characterized by interactive content and collaborations with experts.",
+      "follower_count": 508670,
+      "typologie": null,
+      "title": "THE MOROCCAN DREAM: Inspiring Moroccan Success Stories",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "291K",
+          "profile_url": "https://www.youtube.com/channel/UCY4N9OvDJapv7hcXO9PK5GQ",
+          "score": "60.9",
+          "score_raw": 60.94104310133634,
+          "growth": {
+            "value": "+0.62 %",
+            "type": "greater"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "144.6K",
+          "profile_url": "https://www.instagram.com/themoroccandream.event/",
+          "score": "79.4",
+          "score_raw": 79.3535992042511,
+          "growth": {
+            "value": "-0.55 %",
+            "type": "lower"
+          },
+          "engagement_rate": "5.5%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "66.9K",
+          "profile_url": "https://www.tiktok.com/@drtabaliyoussef/",
+          "score": "7.5",
+          "score_raw": 7.4788688731604696,
+          "growth": {
+            "value": "-0.26 %",
+            "type": "lower"
+          },
+          "engagement_rate": null,
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 573",
+        "raw": 8572.658438325121,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "+0.15 %",
+        "absolute": "+746",
+        "type": "greater"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 45
+      }
+    },
+    {
+      "_id": "654e03b76de355d528896cce",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/yt/UCUoZ0VRxIqJJAdmpPqohuxA.jpg",
+      "full_name": "Roba Da Marocchini",
+      "biography": "Roba Da Marocchini is a prominent social media presence focused on the Moroccan community in Italy. The brand shares news and updates relevant to Moroccans living abroad, particularly legislative changes and community issues. Content themes include social justice, immigration, and cultural identity, with a strong emphasis on current events affecting the Moroccan diaspora. The brand engages its audience through informative posts and discussions about significant political and social matters, fostering a sense of community and awareness among its followers.",
+      "follower_count": 435362,
+      "typologie": null,
+      "title": "Roba Da Marocchini: Advocating for the Moroccan Community in Italy",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "330K",
+          "profile_url": "https://www.youtube.com/channel/UCUoZ0VRxIqJJAdmpPqohuxA",
+          "score": "84.7",
+          "score_raw": 84.74786218892054,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.2%",
+          "profile_views": "-"
+        },
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "105.4K",
+          "profile_url": "https://www.instagram.com/robadamarocchini/",
+          "score": "83.4",
+          "score_raw": 83.36456981006485,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "3.7%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 565",
+        "raw": 8564.95340085887,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 46
+      }
+    },
+    {
+      "_id": "657be1fb67f760b935f17e85",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "General eCommerce",
+          "root": "682c74877bdfe341b6c56c4f",
+          "root_name": "Fashion & Retail",
+          "id": "682c799a40e028b88235b59c",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c74877bdfe341b6c56c4f": {
+          "id": "682c74877bdfe341b6c56c4f",
+          "name": "Fashion & Retail",
+          "niches": {
+            "682c799a40e028b88235b59c": {
+              "id": "682c799a40e028b88235b59c",
+              "name": "General eCommerce",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/30276911582.jpg",
+      "full_name": "أواني شعيب",
+      "biography": "أواني شعيب is a Moroccan brand specializing in affordable household items. Their social media presence focuses on promoting sales and discounts, showcasing a variety of kitchenware and home goods at competitive prices. Engaging posts highlight special offers, seasonal sales, and delivery services, appealing to budget-conscious consumers. The brand effectively utilizes vibrant visuals and interactive content to attract a wide audience, primarily targeting families and individuals looking for quality products at low prices.",
+      "follower_count": 1210083,
+      "typologie": null,
+      "title": "أواني شعيب: Affordable Kitchenware and Home Goods in Morocco",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "791K",
+          "profile_url": "https://www.instagram.com/awani.chouaib/",
+          "score": "80.7",
+          "score_raw": 80.69718114436048,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.1%",
+          "profile_views": "-"
+        },
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "419.1K",
+          "profile_url": "https://www.tiktok.com/@awani.chouaib/",
+          "score": "84.2",
+          "score_raw": 84.21367276801436,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.5%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 565",
+        "raw": 8564.617544196908,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 47
+      }
+    },
+    {
+      "_id": "657bf10467f760b935f21d08",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Hospitals & Clinics",
+          "root": "682c75067bdfe341b6c5b3c2",
+          "root_name": "Health & Wellness",
+          "id": "682c779840e028b88235a8c1",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75067bdfe341b6c5b3c2": {
+          "id": "682c75067bdfe341b6c5b3c2",
+          "name": "Health & Wellness",
+          "niches": {
+            "682c779840e028b88235a8c1": {
+              "id": "682c779840e028b88235a8c1",
+              "name": "Hospitals & Clinics",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tt/6752531023178023942.jpg",
+      "full_name": "Centre Merzouga",
+      "biography": "Centre Merzouga specializes in massage therapy and natural healing, prominently featuring content related to chiropractic care and wellness. Their TikTok presence showcases various massage techniques, including facial and spinal adjustments, often accompanied by humorous commentary. The brand engages a diverse audience interested in health and wellness, with posts frequently highlighting locations in France, Belgium, Germany, and Spain. The high engagement metrics indicate a strong community interest in their services and content themes.",
+      "follower_count": 387100,
+      "typologie": null,
+      "title": "Centre Merzouga: Expert Massage Therapy and Natural Healing",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "387.1K",
+          "profile_url": "https://www.tiktok.com/@centre_merzouga/",
+          "score": "85.9",
+          "score_raw": 85.8911570649967,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2.2%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 549",
+        "raw": 8548.909962642825,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 48
+      }
+    },
+    {
+      "_id": "6399a6f6200debbe1a529c37",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "Content Studios",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77e340e028b88235a97b",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77e340e028b88235a97b": {
+              "id": "682c77e340e028b88235a97b",
+              "name": "Content Studios",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "English",
+        "native": "English",
+        "id": "en",
+        "code2": "en",
+        "slug": "english"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/tt/6748320196580148229.jpg",
+      "full_name": "Matrixmen",
+      "biography": "Matrixmen is a Moroccan comedy troupe known for their engaging and humorous content across TikTok and YouTube. Their posts often feature comedic sketches, parodies, and vlogs that resonate with a youthful audience. The brand emphasizes collaboration, showcasing various creators and production teams in their videos. With a strong presence on social media, they actively engage with their followers, promoting their work and encouraging support through platforms like Patreon. Their content reflects a blend of entertainment and cultural commentary.",
+      "follower_count": 820800,
+      "typologie": null,
+      "title": "Matrixmen: Moroccan Comedy Troupe Creating Engaging Parodies",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "tiktok": {
+          "network": "tiktok",
+          "follower_count": "612.8K",
+          "profile_url": "https://www.tiktok.com/@matrixmen_/",
+          "score": "84.5",
+          "score_raw": 84.4981239684977,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "2%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "208K",
+          "profile_url": "https://www.youtube.com/channel/UCbd_rfQuZ0JqDEGRx_XBXhw",
+          "score": "64.8",
+          "score_raw": 64.80281087075602,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0.5%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 547",
+        "raw": 8547.238729257597,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "0.00 %",
+        "absolute": "0",
+        "type": "equal"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": false,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 49
+      }
+    },
+    {
+      "_id": "639680ed2785853b94ee42ac",
+      "categories": [],
+      "industries": {},
+      "brand_categories": [
+        {
+          "primary": true,
+          "name": "News Outlets",
+          "root": "682c75107bdfe341b6c5b6ab",
+          "root_name": "Media",
+          "id": "682c77d340e028b88235a953",
+          "state": 0
+        }
+      ],
+      "brand_industries": {
+        "682c75107bdfe341b6c5b6ab": {
+          "id": "682c75107bdfe341b6c5b6ab",
+          "name": "Media",
+          "niches": {
+            "682c77d340e028b88235a953": {
+              "id": "682c77d340e028b88235a953",
+              "name": "News Outlets",
+              "primary": true,
+              "state": 0
+            }
+          }
+        }
+      },
+      "niche_count": 0,
+      "custom_tops": [],
+      "oa_description_parsed": true,
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "language": {
+        "name": "Arabic",
+        "native": "العربية",
+        "rtl": 1,
+        "id": "ar",
+        "code2": "ar",
+        "slug": "arabic"
+      },
+      "picture_url": "https://favikon-medias.s3.eu-west-3.amazonaws.com/in/33477133578.jpg",
+      "full_name": "Hesport",
+      "biography": "Hesport is a Moroccan sports news platform that provides updates on local and international sports events, particularly focusing on football. Their social media presence features match previews, player signings, and highlights from various leagues, engaging a passionate audience of sports fans. The brand emphasizes timely news delivery and interactive content, fostering community discussions around sports events and player performances. Their posts often include vibrant visuals and trending topics in the sports world.",
+      "follower_count": 2043468,
+      "typologie": null,
+      "title": "Hesport: Your Source for Moroccan Sports News and Updates",
+      "age": null,
+      "gender": null,
+      "is_a_brand": true,
+      "networks": {
+        "instagram": {
+          "network": "instagram",
+          "follower_count": "1.5M",
+          "profile_url": "https://www.instagram.com/hesport/",
+          "score": "79",
+          "score_raw": 79.04318798921106,
+          "growth": {
+            "value": "-0.54 %",
+            "type": "lower"
+          },
+          "engagement_rate": "0.2%",
+          "profile_views": "-"
+        },
+        "youtube": {
+          "network": "youtube",
+          "follower_count": "551K",
+          "profile_url": "https://www.youtube.com/channel/UC7FGo_bQUVxVxVsiHAQxSOQ",
+          "score": "59.9",
+          "score_raw": 59.91019615206529,
+          "growth": {
+            "value": "New",
+            "type": "equal"
+          },
+          "engagement_rate": "0%",
+          "profile_views": "-"
+        }
+      },
+      "score": {
+        "score": "8 542",
+        "raw": 8542.16984201398,
+        "tier": 3
+      },
+      "growth": {
+        "percentage": "-0.40 %",
+        "absolute": "-8.2K",
+        "type": "lower"
+      },
+      "badges": {
+        "exceptionalGrowth": false,
+        "linkedinTopVoice": false,
+        "looseFollowers": true,
+        "wroteABook": false,
+        "hasANewsletter": false,
+        "hasAPodcast": false,
+        "hasTopics": false,
+        "hasCause": false,
+        "isInactive": false,
+        "verifiedCreator": false
+      },
+      "custom_creators": [],
+      "rank": {
+        "rank": 50
+      }
+    }
+  ],
+  "total_results": 200,
+  "has_full_access": true
+}
