@@ -11,6 +11,7 @@ const isBrowser = typeof window !== 'undefined';
 const getToken = () => (isBrowser ? localStorage.getItem('token') : null);
 
 export function setAuthToken(token: string) {
+    
     if (token) {
         v1Api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
     } else {
