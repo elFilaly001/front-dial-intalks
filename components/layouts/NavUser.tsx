@@ -39,7 +39,7 @@ export function NavUser() {
   const [userData, setUserData] = useState<any>(null);
   const { isMobile, lockOpen, unlockOpen, state } = useSidebar();
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, forceUpdate } = useAuth();
   const { data: session } = useSession();
 
   const handleOpenChange = (open: boolean) => {
@@ -51,31 +51,11 @@ export function NavUser() {
   }
 
   useEffect(() => {
-    // If next-auth session exists we rely on it; otherwise try to fetch profile using stored token
-    if (session && session.user) {
-      return;
+    // Force re-render when authentication state might have changed
+    if (forceUpdate) {
+      // This will trigger when forceUpdate is called
     }
-
-    if (typeof window === "undefined") return;
-    const token = localStorage.getItem("token");
-    if (!token) return;
-
-    const getProfile = async () => {
-      try {
-        const res = await v1Api.get("/auth/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        setUserData(res.data.user);
-      } catch (err) {
-        console.debug("Failed to fetch profile:", err);
-        setUserData(null);
-      }
-    };
-
-    getProfile();
-  }, [session]);
+  }, [forceUpdate]);
 
   const handleLogout = async () => {
     // Front-only logout: clear client token and session
@@ -99,7 +79,7 @@ export function NavUser() {
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        {isAuthenticated ? (
+        {isAuthenticated || (typeof window !== "undefined" && !!localStorage.getItem("token")) ? (
           <DropdownMenu onOpenChange={handleOpenChange}>
             <DropdownMenuTrigger asChild>
               <SidebarMenuButton

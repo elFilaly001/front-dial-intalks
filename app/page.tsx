@@ -89,7 +89,18 @@ export default function WelcomePage() {
     ];
     const [token, setToken] = React.useState<string >("");
     useEffect(() => {
-        setToken(session?.user?.token || "");
+        const checkToken = () => {
+            const sessionToken = session?.user?.token || "";
+            const localToken = typeof window !== "undefined" ? localStorage.getItem("token") || "" : "";
+            setToken(sessionToken || localToken);
+        };
+
+        checkToken();
+
+        // Also check token on storage events (in case it changes)
+        const handleStorageChange = () => checkToken();
+        window.addEventListener('storage', handleStorageChange);
+
         // Debug: log all session values
         console.log('[WelcomePage] useSession status:', status);
         console.log('[WelcomePage] session:', session);
@@ -101,19 +112,20 @@ export default function WelcomePage() {
             console.log('[WelcomePage] session.user.name:', session.user.name);
             console.log('[WelcomePage] session.user.image:', session.user.image);
         }
+
+        return () => window.removeEventListener('storage', handleStorageChange);
     }, [session, status]);
 
     return (
-        <SessionProvider>
-            <SidebarProvider className="relative">
-                <AppSideBar variant="sidebar" collapsible="icon" />
-                <SidebarInset
-                    data-content-layout={"centered"}
-                    className={cn(
-                        "bg-[#f8f9fa] !mx-0 !max-w-full w-full",
-                        "max-[113rem]:peer-data-[variant=inset]:!mr-2 min-[101rem]:peer-data-[variant=inset]:peer-data-[state=collapsed]:!mr-auto"
-                    )}
-                >
+        <SidebarProvider className="relative">
+            <AppSideBar variant="sidebar" collapsible="icon" />
+            <SidebarInset
+                data-content-layout={"centered"}
+                className={cn(
+                    "bg-[#f8f9fa] !mx-0 !max-w-full w-full",
+                    "max-[113rem]:peer-data-[variant=inset]:!mr-2 min-[101rem]:peer-data-[variant=inset]:peer-data-[state=collapsed]:!mr-auto"
+                )}
+            >
                     {/* Main Content */}
                     <div className=" overflow-y-hidden flex flex-col">
                         {/* Hero Section */}
@@ -190,6 +202,5 @@ export default function WelcomePage() {
                     </div>
                 </SidebarInset>
             </SidebarProvider>
-        </SessionProvider>
     );
 }
