@@ -28,10 +28,16 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
   const [showInsight, setShowInsight] = useState(false);
 
   const mentionsBySentimentChartData = [
-    { sentiment: "positif", mentions: data?.positiveCount ?? 10, fill: "#40bb3c" },
-    { sentiment: "neutre", mentions: data?.neutralCount ?? 10, fill: "#ffbf26" },
-    { sentiment: "négatif", mentions: data?.negativeCount ?? 10, fill: "#ff0c00" },
+    { sentiment: "positif", mentions: data?.positiveCount ?? 0, fill: "#40bb3c" },
+    { sentiment: "neutre", mentions: data?.neutralCount ?? 0, fill: "#ffbf26" },
+    { sentiment: "négatif", mentions: data?.negativeCount ?? 0, fill: "#ff0c00" },
   ];
+
+  // Filter out sentiments with 0 mentions, but if all are 0, show only neutral
+  let chartData = mentionsBySentimentChartData.filter(item => item.mentions > 0);
+  if (chartData.length === 0) {
+    chartData = [{ sentiment: "neutre", mentions: data?.neutralCount ?? 0, fill: "#ffbf26" }];
+  }
 
   const mentionsBySentimentChartConfig = {
     mentions: {
@@ -51,7 +57,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
     },
   } as ChartConfig;
 
-  const totalMentions = mentionsBySentimentChartData.reduce(
+  const totalMentions = chartData.reduce(
     (acc, curr) => acc + curr.mentions,
     0
   );
@@ -85,7 +91,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
               content={<ChartTooltipContent hideLabel />}
             />
             <Pie
-              data={mentionsBySentimentChartData}
+              data={chartData}
               dataKey="mentions"
               nameKey="sentiment"
               innerRadius={65}
@@ -126,7 +132,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
           </PieChart>
         </ChartContainer>
         <div className="flex justify-center w-full items-center gap-3 my-2">
-          {mentionsBySentimentChartData.map((item) => (
+          {chartData.map((item) => (
             <div
               key={item.sentiment}
               className="flex items-center text-sm justify-between"

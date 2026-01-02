@@ -4,6 +4,7 @@ import { Calendar, Trash, ChevronDown } from "lucide-react";
 import moment from "moment";
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
+import { fetchImages } from "@/lib/fetchImages";
 
 interface Mention {
   id: string;
@@ -74,7 +75,7 @@ const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDele
         >
           <div
             className="h-24 w-24 rounded-md bg-gray-700 bg-cover bg-center"
-            style={{ backgroundImage: `url(${feed.thumbnail})` }}
+            style={{ backgroundImage: `url(${fetchImages(feed.thumbnail)})` }}
           ></div>
         </a>
         <div className="flex-1 min-w-0 flex flex-col justify-between h-full">

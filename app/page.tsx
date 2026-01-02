@@ -101,17 +101,6 @@ export default function WelcomePage() {
         const handleStorageChange = () => checkToken();
         window.addEventListener('storage', handleStorageChange);
 
-        // Debug: log all session values
-        console.log('[WelcomePage] useSession status:', status);
-        console.log('[WelcomePage] session:', session);
-        if (session && session.user) {
-            console.log('[WelcomePage] session.user:', session.user);
-            console.log('[WelcomePage] session.user.token:', session.user.token);
-            console.log('[WelcomePage] session.user.id:', session.user.id);
-            console.log('[WelcomePage] session.user.email:', session.user.email);
-            console.log('[WelcomePage] session.user.name:', session.user.name);
-            console.log('[WelcomePage] session.user.image:', session.user.image);
-        }
 
         return () => window.removeEventListener('storage', handleStorageChange);
     }, [session, status]);
