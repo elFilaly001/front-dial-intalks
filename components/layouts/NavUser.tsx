@@ -50,12 +50,7 @@ export function NavUser() {
     }
   }
 
-  useEffect(() => {
-    // Force re-render when authentication state might have changed
-    if (forceUpdate) {
-      // This will trigger when forceUpdate is called
-    }
-  }, [forceUpdate]);
+
 
   const handleLogout = async () => {
     // Front-only logout: clear client token and session

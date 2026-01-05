@@ -18,15 +18,16 @@ export default function SocialListeningPage() {
             <Cucumber />
             <ActionsDropdown />
           </div>
-          <SectionCards />
-          <ChartAreaInteractive />
-          <InsightCards />
+          <SectionCards filters={[]} data={[]} />
+          <ChartAreaInteractive filters={[]} data={[]} />
+          <InsightCards filters={[]} data={[]} />
           <div className="grid grid-cols-2 gap-6">
-            <ShareOfVoice />
-            <ChartSetiment />
+            <ShareOfVoice filters={[]} data={[]} />
+            <ChartSetiment filters={[]} data={[]} />
           </div>
           {/* Convert string[] to KeywordData[] with deterministic counts based on keyword index */}
           <KeywordsNuage
+            filters={[]}
             keywords={rawKeywords.map((k, idx) => ({
               keyword: k,
               count: ((idx * 17 + 13) % 100) + 1,

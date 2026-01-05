@@ -1,5 +1,7 @@
 "use client";
 
+
+import type { Session } from "next-auth";
 import { createContext, useContext, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -9,14 +11,14 @@ const allowedPaths = ["/", "/login", "/register"];
 type AuthContextValue = {
     isAuthenticated: boolean | undefined;
     refresh: () => void;
-    updateSession: () => Promise<void>;
+    updateSession: () => Promise<Session | null>;
     forceUpdate: () => void;
 };
 
 const AuthContext = createContext<AuthContextValue>({
     isAuthenticated: undefined,
     refresh: () => { },
-    updateSession: async () => { },
+    updateSession: async () => null,
     forceUpdate: () => { }
 });
 
