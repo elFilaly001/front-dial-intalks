@@ -22,6 +22,7 @@ import {
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
+import { fetchImages } from "@/lib/fetchImages";
 
 // Sample data for mentions over four sections (S1..S4) to match the target line chart
 const mentionsByPeriodData = [
@@ -433,7 +434,7 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
                 <div key={feed.id} className="flex items-center gap-2">
                   <div
                     className="h-16 w-16 rounded-md bg-gray-700 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${feed.thumbnail})` }}
+                    style={{ backgroundImage: feed.thumbnail ? `url(${fetchImages(feed.thumbnail)})` : 'none' }}
                   ></div>
                   <div className="flex flex-1 justify-between items-center">
                     <div>

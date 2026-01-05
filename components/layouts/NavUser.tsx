@@ -39,7 +39,7 @@ export function NavUser() {
   const [userData, setUserData] = useState<any>(null);
   const { isMobile, lockOpen, unlockOpen, state } = useSidebar();
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, forceUpdate } = useAuth();
   const { data: session } = useSession();
 
   const handleOpenChange = (open: boolean) => {
@@ -50,32 +50,7 @@ export function NavUser() {
     }
   }
 
-  useEffect(() => {
-    // If next-auth session exists we rely on it; otherwise try to fetch profile using stored token
-    if (session && session.user) {
-      return;
-    }
 
-    if (typeof window === "undefined") return;
-    const token = localStorage.getItem("token");
-    if (!token) return;
-
-    const getProfile = async () => {
-      try {
-        const res = await v1Api.get("/auth/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        setUserData(res.data.user);
-      } catch (err) {
-        console.debug("Failed to fetch profile:", err);
-        setUserData(null);
-      }
-    };
-
-    getProfile();
-  }, [session]);
 
   const handleLogout = async () => {
     // Front-only logout: clear client token and session
@@ -99,7 +74,7 @@ export function NavUser() {
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        {isAuthenticated ? (
+        {isAuthenticated || (typeof window !== "undefined" && !!localStorage.getItem("token")) ? (
           <DropdownMenu onOpenChange={handleOpenChange}>
             <DropdownMenuTrigger asChild>
               <SidebarMenuButton
@@ -128,7 +103,7 @@ export function NavUser() {
               <DropdownMenuLabel className="p-0 font-normal">
                 <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
                   <Avatar className="h-8 w-8 rounded-lg">
-                    <AvatarImage src={"/massinart.jpg"} alt={"Massinart"} />
+                    <AvatarImage src={fetchImages(session?.user?.image ?? "")} alt={session?.user?.name ?? ""} />
                     <AvatarFallback className="rounded-lg">G</AvatarFallback>
                   </Avatar>
                   <div className="grid flex-1 text-left text-sm leading-tight">

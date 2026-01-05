@@ -1,5 +1,7 @@
 "use client";
 
+
+import type { Session } from "next-auth";
 import { createContext, useContext, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -9,11 +11,15 @@ const allowedPaths = ["/", "/login", "/register"];
 type AuthContextValue = {
     isAuthenticated: boolean | undefined;
     refresh: () => void;
+    updateSession: () => Promise<Session | null>;
+    forceUpdate: () => void;
 };
 
 const AuthContext = createContext<AuthContextValue>({
     isAuthenticated: undefined,
     refresh: () => { },
+    updateSession: async () => null,
+    forceUpdate: () => { }
 });
 
 export function useAuth() {
@@ -23,38 +29,37 @@ export function useAuth() {
 export default function AuthGuard({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const router = useRouter();
-    const { data: session, status } = useSession();
+    const { data: session, status, update } = useSession();
     const [isAuthenticated, setIsAuthenticated] = useState<boolean | undefined>(undefined);
+    const [forceUpdateCounter, setForceUpdateCounter] = useState(0);
 
     useEffect(() => {
         const currentPath = pathname || "/";
         const isAllowedPath = allowedPaths.includes(currentPath);
 
-        // console.log("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT" , session?.user);
-        
+        // Check localStorage token first (more reliable after login)
+        const hasToken = typeof window !== "undefined" ? !!localStorage.getItem("token") : false;
+        const hasSession = !!session?.user?.id;
+        const isAuth = hasToken || hasSession;
 
-        // While next-auth is resolving, show nothing
-        if (status === "loading") {
+        if (status === "loading" && !hasToken) {
             setIsAuthenticated(undefined);
             return;
         }
 
-        // If path is allowed, set state but don't redirect
         if (isAllowedPath) {
-            setIsAuthenticated(!!session?.user?.id);
+            setIsAuthenticated(isAuth);
             return;
         }
 
-        // If there is no session id, redirect
-        if (!session?.user?.id) {
+        // For protected paths
+        if (!isAuth) {
             setIsAuthenticated(false);
-            // router.push("/login");
             return;
         }
 
-        // If authenticated (session id exists), allow
         setIsAuthenticated(true);
-    }, [status, session, pathname, router]);
+    }, [status, session, pathname, router, forceUpdateCounter]);
 
     if (isAuthenticated === undefined) {
         return null; // or loading indicator
@@ -64,9 +69,13 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
         <AuthContext.Provider value={{
             isAuthenticated,
             refresh: () => {
-                // Force a re-evaluation by updating state based on current session
-                setIsAuthenticated(status === "authenticated" && !!session?.user);
-            }
+                // Force a re-evaluation by updating state based on current session and token
+                const hasSession = status === "authenticated" && !!session?.user;
+                const hasToken = typeof window !== "undefined" ? !!localStorage.getItem("token") : false;
+                setIsAuthenticated(hasSession || hasToken);
+            },
+            updateSession: update,
+            forceUpdate: () => setForceUpdateCounter(prev => prev + 1)
         }}>
             {children}
         </AuthContext.Provider>

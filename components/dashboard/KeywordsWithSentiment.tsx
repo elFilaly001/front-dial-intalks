@@ -24,15 +24,13 @@ import {
 import ToolTipsProvider from "../charts/ToolTipsProvider";
 import Image from "next/image";
 
-const data = [
-  { keyword: "Massinart Gallery", positif: 120, neutre: 80, négatif: 10 },
-  { keyword: "Art Collection", positif: 100, neutre: 60, négatif: 20 },
-  { keyword: "Home Decor", positif: 90, neutre: 70, négatif: 15 },
-  { keyword: "Interior Design", positif: 80, neutre: 90, négatif: 12 },
-  { keyword: "Décoration Intérieure", positif: 70, neutre: 60, négatif: 10 },
-  { keyword: "فن وديكور", positif: 65, neutre: 55, négatif: 8 },
-  { keyword: "Œuvres d'Art", positif: 60, neutre: 45, négatif: 5 },
-];
+
+export type KeywordSentiment = {
+  keyword: string;
+  positif: number;
+  neutre: number;
+  negatif: number;
+};
 
 // Reuse the ShareOfVoice palette for consistency across charts
 const palette = [
@@ -52,7 +50,12 @@ const chartConfig = {
   négatif: { label: "Négatif", color: palette[2] },
 } satisfies ChartConfig;
 
-export default function KeywordsWithSentiment() {
+
+interface KeywordsWithSentimentProps {
+  data: KeywordSentiment[];
+}
+
+export default function KeywordsWithSentiment({ data }: KeywordsWithSentimentProps) {
   const [showInsight, setShowInsight] = React.useState(false);
 
   return (

@@ -6,7 +6,6 @@ import InstagramProvider from 'next-auth/providers/instagram';
 import Credentials from "next-auth/providers/credentials";
 import { getServerSession } from 'next-auth';
 import type { AuthOptions, DefaultSession } from "next-auth";
-import { Instagram } from 'lucide-react';
 import { v1Api } from '@/services/axiosService';
 
 export const authOptions: AuthOptions = {

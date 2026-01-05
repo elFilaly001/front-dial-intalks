@@ -24,16 +24,17 @@ import {
 import ToolTipsProvider from "../charts/ToolTipsProvider";
 import Image from "next/image";
 
-// sample data showing Moroccan cities
-const data = [
-  { city: "Marrakech", positif: 45, neutre: 12, négatif: 3 },
-  { city: "Tanger", positif: 20, neutre: 7, négatif: 2 },
-  { city: "Casablanca", positif: 35, neutre: 18, négatif: 5 },
-  { city: "Rabat", positif: 18, neutre: 6, négatif: 1 },
-  { city: "Fes", positif: 12, neutre: 5, négatif: 1 },
-  { city: "Agadir", positif: 8, neutre: 3, négatif: 0 },
-  { city: "Indéterminé", positif: 10, neutre: 4, négatif: 1 },
-];
+// Accept data as a prop
+type CitySentiment = {
+  city: string;
+  positif: number;
+  neutre: number;
+  negatif: number;
+};
+
+interface TopLocationsWithSentimentProps {
+  data: CitySentiment[];
+}
 
 // ShareOfVoice palette for consistent chart coloring across the dashboard
 const palette = [
@@ -52,16 +53,16 @@ const chartConfig = {
   négatif: { label: "Négatif", color: palette[2] },
 } satisfies ChartConfig;
 
-export default function TopLocationsWithSentiment() {
+export default function TopLocationsWithSentiment({ data }: TopLocationsWithSentimentProps) {
   const [showInsight, setShowInsight] = React.useState(false);
-  // sort cities by total mentions (positif + neutre + négatif) desc
+  // sort cities by total mentions (positif + neutre + negatif) desc
   const sortedData = React.useMemo(() => {
     return [...data].sort((a, b) => {
-      const ta = (a.positif || 0) + (a.neutre || 0) + (a.négatif || 0);
-      const tb = (b.positif || 0) + (b.neutre || 0) + (b.négatif || 0);
+      const ta = (a.positif || 0) + (a.neutre || 0) + (a.negatif || 0);
+      const tb = (b.positif || 0) + (b.neutre || 0) + (b.negatif || 0);
       return tb - ta;
     });
-  }, []);
+  }, [data]);
 
   return (
     <Card className="@container/card relative min-w-0">
@@ -95,7 +96,7 @@ export default function TopLocationsWithSentiment() {
 
               <Bar dataKey="positif" stackId="a" fill={chartConfig.positif.color} />
               <Bar dataKey="neutre" stackId="a" fill={chartConfig.neutre.color} />
-              <Bar dataKey="négatif" stackId="a" fill={chartConfig.négatif.color} />
+              <Bar dataKey="negatif" stackId="a" fill={chartConfig.négatif.color} />
             </BarChart>
           </ResponsiveContainer>
         </ChartContainer>
