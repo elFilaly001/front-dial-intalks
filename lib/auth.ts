@@ -32,7 +32,6 @@ export const authOptions: AuthOptions = {
             clientId: process.env.LINKEDIN_CLIENT_ID!,
             clientSecret: process.env.LINKEDIN_CLIENT_SECRET!,
         }),
-        // Credentials provider for username/password login
         Credentials({
             credentials: {
                 email: {},
