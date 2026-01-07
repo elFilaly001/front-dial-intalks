@@ -24,12 +24,12 @@ import Image from "next/image";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
 import { fetchImages } from "@/lib/fetchImages";
 
-// Sample data for mentions over four sections (S1..S4) to match the target line chart
-const mentionsByPeriodData = [
-  { period: "1 Fev", x: 80, facebook: 40, instagram: 60, tiktok: 90, news: 15 },
-  { period: "2 Mar", x: 95, facebook: 30, instagram: 55, tiktok: 110, news: 12 },
-  { period: "3 Avr", x: 70, facebook: 35, instagram: 58, tiktok: 105, news: 18 },
-  { period: "4 Mai", x: 75, facebook: 38, instagram: 62, tiktok: 98, news: 20 },
+// Fallback sample data for mentions by source (used if API data not present)
+const mentionsByPeriodSample = [
+  { date: "1 Fev", x: 80, facebook: 40, instagram: 60, tiktok: 90, news: 15 },
+  { date: "2 Fev", x: 95, facebook: 30, instagram: 55, tiktok: 110, news: 12 },
+  { date: "3 Fev", x: 70, facebook: 35, instagram: 58, tiktok: 105, news: 18 },
+  { date: "4 Fev", x: 75, facebook: 38, instagram: 62, tiktok: 98, news: 20 },
 ];
 
 const mentionsByPeriodConfig = {
@@ -294,6 +294,7 @@ interface SectionCardsProps {
   data: any;
 }
 
+
 export function InsightCards({ filters, data }: SectionCardsProps) {
   const [showInsight1, setShowInsight1] = useState(false);
   const [showInsight2, setShowInsight2] = useState(false);
@@ -304,6 +305,28 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
   const mentionsList: MentionFeed[] = Array.isArray(data?.latestMention)
     ? data!.latestMention
     : mentions;
+
+  // Helper to format date as 'D MMM' (e.g., '8 Oct')
+  function formatDateToDayMonth(dateStr: string) {
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) return dateStr;
+    const day = d.getDate();
+    const month = d.toLocaleString('en-US', { month: 'short' });
+    return `${day} ${month}`;
+  }
+
+  // Use mentionsBySource from API if available, else fallback to sample
+  const mentionsByPeriodData = Array.isArray(data?.mentionsBySource) && data.mentionsBySource.length > 0
+    ? data.mentionsBySource.map((item: any) => ({
+        date: formatDateToDayMonth(item.date),
+        x: item.x ?? item["x"] ?? 0,
+        facebook: item.facebook ?? 0,
+        instagram: item.instagram ?? 0,
+        tiktok: item.tiktok ?? 0,
+        news: item.news ?? 0,
+        // Optionally add other sources if needed
+      }))
+    : mentionsByPeriodSample;
 
   const totalPages = Math.max(1, Math.ceil(mentionsList.length / itemsPerPage));
 
@@ -325,7 +348,7 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
             <LineChart data={mentionsByPeriodData}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis
-                dataKey="period"
+                dataKey="date"
                 tickLine={false}
                 tickMargin={10}
                 axisLine={false}

@@ -33,7 +33,7 @@ const Overview = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const responseDashboard = await v1Api.get("/dashboard");
+        const responseDashboard = await v1Api.get("/dashboard/social-listening");
         setOverviewData(responseDashboard.data);
         console.log("fetched data", responseDashboard.data);
       } catch (error) {
