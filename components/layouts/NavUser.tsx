@@ -30,7 +30,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { useEffect, useState } from "react";
-import { v1Api } from '@/services/axiosService';
+// import { v1Api } from '@/services/axiosService';
 import { useAuth } from "@/components/AuthGuard";
 import { fetchImages } from "@/lib/fetchImages";
 import { useSession } from "next-auth/react";

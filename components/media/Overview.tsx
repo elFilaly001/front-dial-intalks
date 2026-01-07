@@ -10,8 +10,16 @@ import FilterOverView from "./FilterOverView";
 import {v1Api} from "@/services/axiosService";
 
 type OverviewDataType = {
-  dashboard?: Object;
-  mentions?: Object;
+  total?: number;
+  dailyAverage?: number;
+  totalMonth?: number;
+  positiveCount?: number;
+  negativeCount?: number;
+  neutralCount?: number;
+  mentionsByKeyword?: { keyword: string; count: number }[];
+  dailyMentions?: { date: string; positive: number; negative: number; neutral: number; total: number }[];
+  mentionsBySource?: { date: string; x: number; facebook: number; instagram: number; tiktok: number; news: number }[];
+  latestMention?: { id: string; title: string; link: string; postedDate: string; thumbnail: string; snippet?: string; source: string; type: string }[];
 };
 
 const Overview = () => {
@@ -33,7 +41,7 @@ const Overview = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const responseDashboard = await v1Api.get("/dashboard");
+        const responseDashboard = await v1Api.get("/dashboard/social-listening");
         setOverviewData(responseDashboard.data);
         console.log("fetched data", responseDashboard.data);
       } catch (error) {
@@ -71,10 +79,7 @@ const Overview = () => {
         </div>
         <KeywordsNuage
           filters={filters}
-          keywords={rawKeywords.map((k, idx) => ({
-            keyword: k,
-            count: ((idx * 17 + 13) % 100) + 1,
-          }))}
+          keywords={overviewData?.mentionsByKeyword || []}
         />
       </div>
     </div>
