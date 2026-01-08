@@ -18,7 +18,6 @@ type OverviewDataType = {
   neutralCount?: number;
   mentionsByKeyword?: { keyword: string; count: number }[];
   dailyMentions?: { date: string; positive: number; negative: number; neutral: number; total: number }[];
-  mentionsBySource?: { date: string; x: number; facebook: number; instagram: number; tiktok: number; news: number }[];
   latestMention?: { id: string; title: string; link: string; postedDate: string; thumbnail: string; snippet?: string; source: string; type: string }[];
 };
 

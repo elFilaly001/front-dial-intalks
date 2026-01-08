@@ -71,9 +71,22 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
     return `${day} ${month}`;
   }
 
-  // Use mentionsBySource from API if available, else fallback to sample
-  let originalMentionsData = Array.isArray(data?.mentionsBySource) && data.mentionsBySource.length > 0
-    ? data.mentionsBySource
+  // Map filter values to dailyMentions keys
+  const sourceKeyMap: Record<string, string> = {
+    'X': 'x',
+    'Facebook': 'facebook',
+    'Instagram': 'instagram',
+    'Tiktok': 'tiktok',
+    'TikTok': 'tiktok',
+    'Linkedin': 'linkedin',
+    'LinkedIn': 'linkedin',
+    'News': 'news',
+    'Youtube': 'youtube',
+  };
+
+  // Use dailyMentions from API if available, else fallback to sample
+  let originalMentionsData = Array.isArray(data?.dailyMentions) && data.dailyMentions.length > 0
+    ? data.dailyMentions
     : mentionsByPeriodSample.map((item: any) => ({
         date: item.date, // Keep as is for sample
         x: item.x,
@@ -84,7 +97,7 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
       }));
 
   // Filter by date range if provided and if using API data (not sample)
-  if (filters?.dateRange?.from && filters?.dateRange?.to && Array.isArray(data?.mentionsBySource) && data.mentionsBySource.length > 0) {
+  if (filters?.dateRange?.from && filters?.dateRange?.to && Array.isArray(data?.dailyMentions) && data.dailyMentions.length > 0) {
     const fromTime = new Date(filters.dateRange.from).setHours(0, 0, 0, 0);
     const toTime = new Date(filters.dateRange.to).setHours(23, 59, 59, 999);
     originalMentionsData = originalMentionsData.filter((item: any) => {
@@ -93,15 +106,24 @@ export function InsightCards({ filters, data }: SectionCardsProps) {
     });
   }
 
-  // Now map to formatted data
-  const mentionsByPeriodData = originalMentionsData.map((item: any) => ({
-    date: formatDateToDayMonth(item.date),
-    x: item.x ?? item["x"] ?? 0,
-    facebook: item.facebook ?? 0,
-    instagram: item.instagram ?? 0,
-    tiktok: item.tiktok ?? 0,
-    news: item.news ?? 0,
-  }));
+  // If a source filter is selected, only show that source's daily count
+  let mentionsByPeriodData;
+  if (filters?.source && sourceKeyMap[filters.source]) {
+    const key = sourceKeyMap[filters.source];
+    mentionsByPeriodData = originalMentionsData.map((item: any) => ({
+      date: formatDateToDayMonth(item.date),
+      [key]: item[key] ?? 0,
+    }));
+  } else {
+    mentionsByPeriodData = originalMentionsData.map((item: any) => ({
+      date: formatDateToDayMonth(item.date),
+      x: item.x ?? item["x"] ?? 0,
+      facebook: item.facebook ?? 0,
+      instagram: item.instagram ?? 0,
+      tiktok: item.tiktok ?? 0,
+      news: item.news ?? 0,
+    }));
+  }
 
 
 
