@@ -652,7 +652,7 @@ const PostsGrid = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await v1Api.get('/posts');
+        const response = await v1Api.get('/dashboard/posts');
         setPostsData(response.data);
         
       } catch (error) {
