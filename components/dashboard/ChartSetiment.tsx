@@ -4,12 +4,7 @@ import Image from "next/image";
 
 import { Label, Pie, PieChart } from "recharts";
 
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
@@ -17,7 +12,6 @@ import {
   ChartConfig,
 } from "@/components/ui/chart";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
-
 
 interface SectionCardsProps {
   filters: any;
@@ -42,9 +36,18 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
   }
 
   // Calculate sentiment counts from filtered mentions
-  const positiveCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.positive || 0), 0);
-  const neutralCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.neutral || 0), 0);
-  const negativeCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.negative || 0), 0);
+  const positiveCount = filteredMentions.reduce(
+    (sum: number, item: any) => sum + (item.positive || 0),
+    0,
+  );
+  const neutralCount = filteredMentions.reduce(
+    (sum: number, item: any) => sum + (item.neutral || 0),
+    0,
+  );
+  const negativeCount = filteredMentions.reduce(
+    (sum: number, item: any) => sum + (item.negative || 0),
+    0,
+  );
 
   const mentionsBySentimentChartData = [
     { sentiment: "positif", mentions: positiveCount, fill: "#40bb3c" },
@@ -53,9 +56,17 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
   ];
 
   // Filter out sentiments with 0 mentions, but if all are 0, show only neutral
-  let chartData = mentionsBySentimentChartData.filter(item => item.mentions > 0);
+  let chartData = mentionsBySentimentChartData.filter(
+    (item) => item.mentions > 0,
+  );
   if (chartData.length === 0) {
-    chartData = [{ sentiment: "neutre", mentions: data?.neutralCount ?? 0, fill: "#ffbf26" }];
+    chartData = [
+      {
+        sentiment: "neutre",
+        mentions: data?.neutralCount ?? 0,
+        fill: "#ffbf26",
+      },
+    ];
   }
 
   const mentionsBySentimentChartConfig = {
@@ -76,16 +87,15 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
     },
   } as ChartConfig;
 
-  const totalMentions = chartData.reduce(
-    (acc, curr) => acc + curr.mentions,
-    0
-  );
+  const totalMentions = chartData.reduce((acc, curr) => acc + curr.mentions, 0);
 
   return (
     <Card className="col-span-1 relative">
       <CardHeader>
         <div className="flex items-center gap-2">
-          <CardTitle className="">Répartition des Mentions par Sentiment</CardTitle>
+          <CardTitle className="">
+            Répartition des Mentions par Sentiment
+          </CardTitle>
           <ToolTipsProvider
             title={`Affiche la distribution des mentions selon leur tonalité (positive, neutre ou négative) pour la période sélectionnée, permettant d’identifier le sentiment dominant et d’évaluer la perception globale de la marque.`}
           />
@@ -174,16 +184,23 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
             onMouseEnter={() => setShowInsight(true)}
             onMouseLeave={() => setShowInsight(false)}
           >
-            <Image src="/icons/IN-TALKS-logo.png-2.webp" alt="IN-TALKS Logo" width={22} height={22} className="inline-block align-middle" />
+            <Image
+              src="/icons/IN-TALKS-logo.png-2.webp"
+              alt="IN-TALKS Logo"
+              width={22}
+              height={22}
+              className="inline-block align-middle"
+            />
             <span
               className="font-semibold"
               style={{
-                background: 'linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                color: 'transparent',
-                display: 'inline-block',
+                background:
+                  "linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                color: "transparent",
+                display: "inline-block",
               }}
             >
               AI-Powered Insight
@@ -192,7 +209,11 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
           {showInsight && (
             <div className="absolute bottom-full left-0 mb-2 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 w-auto min-w-80 max-w-xl">
               <p className="text-sm text-gray-700 dark:text-gray-300">
-                L&apos;analyse des sentiments montre que les mentions positives dominent à 49% (275 mentions), indiquant une perception globalement favorable. Le sentiment négatif représente 16% (80 mentions), ce qui suggère des axes d&apos;amélioration pour l&apos;expérience client.
+                L&apos;analyse des sentiments montre que les mentions positives
+                dominent à 49% (275 mentions), indiquant une perception
+                globalement favorable. Le sentiment négatif représente 16% (80
+                mentions), ce qui suggère des axes d&apos;amélioration pour
+                l&apos;expérience client.
               </p>
             </div>
           )}
