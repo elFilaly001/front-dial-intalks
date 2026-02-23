@@ -64,15 +64,15 @@ export default function SocialListeningPage() {
             <ActionsDropdown />
           </div>
       <div className="@container/main flex flex-col gap-4 md:gap-6">
-        <MentionsBySentiments />
-        <KeywordsWithSentiment />
+        <MentionsBySentiments data={[]} />
+        <KeywordsWithSentiment data={[]} />
         <div className="flex flex-col lg:flex-row gap-6 [&>*]:flex-1 [&>*]:min-w-0">
           <KeywordWithSetiments
             label="Répartition des Sentiments par Source"
             data={dataNetworks}
             tooltip={`Ce graphique montre la répartition des sentiments (positif, neutre, négatif) générés par la marque sur chaque plateforme sociale. Il permet d'identifier les canaux qui suscitent le plus d'engagement positif, ceux où les conversations sont plus mitigées, ainsi que les sources où le sentiment négatif est le plus élevé.`}
           />
-          <TopLocationsWithSentiment />
+          <TopLocationsWithSentiment data={[]} />
         </div>
       </div>
         </div>

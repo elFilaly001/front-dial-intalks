@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CountriesSplit from "../charts/CountriesSplit";
 import MentionsNumberCard from "../dashboard/MentionsNumberCard";
 import WordCloud from "../dashboard/WordsCloud";
@@ -23,9 +23,9 @@ import {
   // Users,
 } from "lucide-react";
 // import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import { CompactDatePicker } from "../ui/CompactDatePicker";
 import Image from "next/image";
+import {v1Api} from "@/services/axiosService";
 // import Mentions from "../fil-actualites/Mentions";
 
 // const followersData = [
@@ -131,6 +131,19 @@ const MentionsFeed = () => {
   });
 
   const [source, setSource] = useState<string | undefined>(undefined);
+  const [mentionsBySource, setMentionsBySource] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await v1Api.get('/dashboard/mentions');
+        setMentionsBySource(response.data.mentionsBySource);
+      } catch (error) {
+        console.error('Error fetching mentions data:', error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <div className="grid grid-cols-3 gap-5">
       <div className="col-span-2">
@@ -193,7 +206,7 @@ const MentionsFeed = () => {
       </div>
       <div className="flex flex-col gap-5 col-span-3">
         <div className="grid grid-cols-2 gap-5">
-          <MentionsBySource />
+          <MentionsBySource data={mentionsBySource} />
           <MentionsNumberCard malePercent={60} femalePercent={40} />
         </div>
         <div className="grid grid-cols-2 gap-5">

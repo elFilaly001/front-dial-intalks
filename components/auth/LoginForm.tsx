@@ -14,12 +14,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { signIn, getSession } from "next-auth/react";
+import { useAuth } from "@/components/AuthGuard";
 
 export function LoginForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const router = useRouter();
+  const { updateSession, forceUpdate } = useAuth();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -49,14 +51,21 @@ export function LoginForm({
           return;
         }
 
-        // After signIn, fetch the session to get the token set by the credentials provider
+        // Get the updated session and store token
         const session = await getSession();
-        const token = session?.user?.token;
-
-        if (token) {
-          localStorage.setItem("token", token as string);
+        if (session?.user?.token) {
+          localStorage.setItem("token", session.user.token);
+          // Dispatch storage event to notify other components
+          window.dispatchEvent(new Event('storage'));
         }
 
+        // Update the session to ensure it's available immediately
+        await updateSession();
+
+        // Force update of authentication state
+        forceUpdate();
+
+        // After successful signIn, navigate to home page
         router.push("/");
       } catch (err: any) {
         console.error(err);

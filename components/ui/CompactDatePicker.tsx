@@ -42,22 +42,35 @@ export function CompactDatePicker({
 }: CompactDatePickerProps) {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  // const applyPreset = (days: number) => {
-  //   const to = new Date();
-  //   const from = new Date();
+  const applyPreset = (preset: typeof PRESETS[0]) => {
+    const now = new Date();
+    let from: Date, to: Date;
 
-  //   if (days === 0) {
-  //     from.setHours(0, 0, 0, 0);
-  //     to.setHours(23, 59, 59, 999);
-  //   } else {
-  //     from.setDate(from.getDate() - days);
-  //     from.setHours(0, 0, 0, 0);
-  //     to.setHours(23, 59, 59, 999);
-  //   }
+    if (preset.days !== undefined) {
+      to = new Date(now);
+      from = new Date(now);
 
-  //   onDateRangeChange({ from, to });
-  //   setIsOpen(false);
-  // };
+      if (preset.days === 0) {
+        from.setHours(0, 0, 0, 0);
+        to.setHours(23, 59, 59, 999);
+      } else {
+        from.setDate(from.getDate() - preset.days);
+        from.setHours(0, 0, 0, 0);
+        to.setHours(23, 59, 59, 999);
+      }
+    } else if (preset.type === "this_month") {
+      from = new Date(now.getFullYear(), now.getMonth(), 1);
+      to = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
+    } else if (preset.type === "last_month") {
+      from = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+      to = new Date(now.getFullYear(), now.getMonth(), 0, 23, 59, 59, 999);
+    } else {
+      return;
+    }
+
+    onDateRangeChange({ from, to });
+    setIsOpen(false);
+  };
 
   const formatDateRange = () => {
     if (!dateRange.from && !dateRange.to) {
@@ -88,7 +101,12 @@ export function CompactDatePicker({
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0 grid grid-cols-3" align="start">
-          <RadioGroup defaultValue="comfortable">
+          <RadioGroup onValueChange={(value) => {
+            const preset = PRESETS.find(p => p.label === value);
+            if (preset) {
+              applyPreset(preset);
+            }
+          }}>
             <div className="flex flex-col gap-5 p-5">
               {PRESETS.map((item) => (
                 <div key={item.label} className="flex items-center gap-3">

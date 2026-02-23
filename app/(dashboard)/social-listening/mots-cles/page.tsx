@@ -21,7 +21,7 @@ const page = () => {
         <TopKeywords keywords={keywords} />
         <MostHastags />
       </div>
-      <KeywordsNuage keywords={keywordData} />
+      <KeywordsNuage filters={[]} keywords={keywordData} />
     </div>
   );
 };

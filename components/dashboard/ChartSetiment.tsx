@@ -27,11 +27,36 @@ interface SectionCardsProps {
 const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
   const [showInsight, setShowInsight] = useState(false);
 
+  // Get all daily mentions
+  const allDailyMentions = data?.dailyMentions || [];
+
+  // Filter daily mentions by date range
+  let filteredMentions = allDailyMentions;
+  if (filters?.dateRange?.from && filters?.dateRange?.to) {
+    const fromTime = new Date(filters.dateRange.from).setHours(0, 0, 0, 0);
+    const toTime = new Date(filters.dateRange.to).setHours(23, 59, 59, 999);
+    filteredMentions = allDailyMentions.filter((item: any) => {
+      const itemTime = new Date(item.date).getTime();
+      return itemTime >= fromTime && itemTime <= toTime;
+    });
+  }
+
+  // Calculate sentiment counts from filtered mentions
+  const positiveCount = filteredMentions.reduce((sum, item) => sum + (item.positive || 0), 0);
+  const neutralCount = filteredMentions.reduce((sum, item) => sum + (item.neutral || 0), 0);
+  const negativeCount = filteredMentions.reduce((sum, item) => sum + (item.negative || 0), 0);
+
   const mentionsBySentimentChartData = [
-    { sentiment: "positif", mentions: data?.positiveCount ?? 10, fill: "#40bb3c" },
-    { sentiment: "neutre", mentions: data?.neutralCount ?? 10, fill: "#ffbf26" },
-    { sentiment: "négatif", mentions: data?.negativeCount ?? 10, fill: "#ff0c00" },
+    { sentiment: "positif", mentions: positiveCount, fill: "#40bb3c" },
+    { sentiment: "neutre", mentions: neutralCount, fill: "#ffbf26" },
+    { sentiment: "négatif", mentions: negativeCount, fill: "#ff0c00" },
   ];
+
+  // Filter out sentiments with 0 mentions, but if all are 0, show only neutral
+  let chartData = mentionsBySentimentChartData.filter(item => item.mentions > 0);
+  if (chartData.length === 0) {
+    chartData = [{ sentiment: "neutre", mentions: data?.neutralCount ?? 0, fill: "#ffbf26" }];
+  }
 
   const mentionsBySentimentChartConfig = {
     mentions: {
@@ -51,7 +76,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
     },
   } as ChartConfig;
 
-  const totalMentions = mentionsBySentimentChartData.reduce(
+  const totalMentions = chartData.reduce(
     (acc, curr) => acc + curr.mentions,
     0
   );
@@ -85,7 +110,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
               content={<ChartTooltipContent hideLabel />}
             />
             <Pie
-              data={mentionsBySentimentChartData}
+              data={chartData}
               dataKey="mentions"
               nameKey="sentiment"
               innerRadius={65}
@@ -126,7 +151,7 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
           </PieChart>
         </ChartContainer>
         <div className="flex justify-center w-full items-center gap-3 my-2">
-          {mentionsBySentimentChartData.map((item) => (
+          {chartData.map((item) => (
             <div
               key={item.sentiment}
               className="flex items-center text-sm justify-between"

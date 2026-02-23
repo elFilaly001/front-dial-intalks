@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Select,
   SelectContent,
@@ -43,12 +43,22 @@ interface FilterOverViewProps {
 }
 
 const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChange }) => {
-  const updateFilter = (key: string, value: any) => {
-    onFiltersChange({ ...filters, [key]: value });
+  const [pendingFilters, setPendingFilters] = useState(filters);
+
+  useEffect(() => {
+    setPendingFilters(filters);
+  }, [filters]);
+
+  const updatePendingFilter = (key: string, value: any) => {
+    setPendingFilters({ ...pendingFilters, [key]: value });
+  };
+
+  const handleFilter = () => {
+    onFiltersChange(pendingFilters);
   };
 
   const handleReset = () => {
-    onFiltersChange({
+    const resetFilters = {
       dateRange: { from: undefined, to: undefined },
       source: "",
       sentiment: "",
@@ -56,18 +66,20 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
       format: "",
       language: "",
       city: "",
-    });
+    };
+    setPendingFilters(resetFilters);
+    onFiltersChange(resetFilters);
   };
 
   return (
     <div>
       <div className="grid grid-cols-4 gap-2">
         <CompactDatePicker
-          dateRange={filters.dateRange}
-          onDateRangeChange={(range) => updateFilter("dateRange", range)}
+          dateRange={pendingFilters.dateRange}
+          onDateRangeChange={(range) => updatePendingFilter("dateRange", range)}
         />
         
-        <Select value={filters.source} onValueChange={(val) => updateFilter("source", val)}>
+        <Select value={pendingFilters.source} onValueChange={(val) => updatePendingFilter("source", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par source" />
           </SelectTrigger>
@@ -105,7 +117,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
           </SelectContent>
         </Select>
 
-        <Select value={filters.sentiment} onValueChange={(val) => updateFilter("sentiment", val)}>
+        <Select value={pendingFilters.sentiment} onValueChange={(val) => updatePendingFilter("sentiment", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par sentiment" />
           </SelectTrigger>
@@ -119,7 +131,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
           </SelectContent>
         </Select>
 
-        <Select value={filters.author} onValueChange={(val) => updateFilter("author", val)}>
+        <Select value={pendingFilters.author} onValueChange={(val) => updatePendingFilter("author", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par auteur" />
           </SelectTrigger>
@@ -133,7 +145,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
           </SelectContent>
         </Select>
 
-        <Select value={filters.format} onValueChange={(val) => updateFilter("format", val)}>
+        <Select value={pendingFilters.format} onValueChange={(val) => updatePendingFilter("format", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par format" />
           </SelectTrigger>
@@ -147,7 +159,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
           </SelectContent>
         </Select>
 
-        <Select value={filters.language} onValueChange={(val) => updateFilter("language", val)}>
+        <Select value={pendingFilters.language} onValueChange={(val) => updatePendingFilter("language", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par langue" />
           </SelectTrigger>
@@ -164,7 +176,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
           </SelectContent>
         </Select>
 
-        <Select value={filters.city} onValueChange={(val) => updateFilter("city", val)}>
+        <Select value={pendingFilters.city} onValueChange={(val) => updatePendingFilter("city", val)}>
           <SelectTrigger className="w-full bg-white">
             <SelectValue placeholder="Par ville" />
           </SelectTrigger>
@@ -179,7 +191,7 @@ const FilterOverView: React.FC<FilterOverViewProps> = ({ filters, onFiltersChang
         </Select>
 
         <div className="flex-1 flex items-center gap-2.5">
-          <Button className="flex-1 bg-main">
+          <Button className="flex-1 bg-main" onClick={handleFilter}>
             <Filter />
             Filtrer
           </Button>

@@ -101,60 +101,60 @@ const chartConfig2 = {
   },
 } satisfies ChartConfig;
 
-const networks = [
-  {
-    network: "instagram",
-    profil: "/massinart.jpg",
-    username: "massinart.ma",
-    name: "Massinart",
-    followers: 90000,
-    er: 2.5,
-    avgEngage: 19000,
-    avgViews: 211400,
-    metrics: "85.4",
-    growth: 7.3,
-    activity: 14,
-  },
-  {
-    network: "tiktok",
-    profil: "/Massinart--Logo.png",
-    username: "massinart.ma",
-    name: "Massinart",
-    followers: 13100,
-    er: 1.8,
-    avgEngage: 8000,
-    avgViews: 90000,
-    metrics: "80.2",
-    growth: 1.2,
-    activity: 12,
-  },
-  {
-    network: "facebook",
-    profil: "/massinart.jpg",
-    username: "massinart.ma",
-    name: "Massinart",
-    followers: 8800,
-    er: 2.1,
-    avgEngage: 12000,
-    avgViews: 150000,
-    metrics: "83.7",
-    growth: 4.5,
-    activity: 8,
-  },
-  {
-    network: "youtube",
-    profil: "/massinart.jpg",
-    username: "massinart.ma",
-    name: "Massinart",
-    followers: 2350,
-    er: 3.2,
-    avgEngage: 5000,
-    avgViews: 200000,
-    metrics: "88.1",
-    growth: 12.8,
-    activity: 4,
-  },
-];
+// const networks = [
+//   {
+//     network: "instagram",
+//     profil: "/massinart.jpg",
+//     username: "massinart.ma",
+//     name: "Massinart",
+//     followers: 90000,
+//     er: 2.5,
+//     avgEngage: 19000,
+//     avgViews: 211400,
+//     metrics: "85.4",
+//     growth: 7.3,
+//     activity: 14,
+//   },
+//   {
+//     network: "tiktok",
+//     profil: "/Massinart--Logo.png",
+//     username: "massinart.ma",
+//     name: "Massinart",
+//     followers: 13100,
+//     er: 1.8,
+//     avgEngage: 8000,
+//     avgViews: 90000,
+//     metrics: "80.2",
+//     growth: 1.2,
+//     activity: 12,
+//   },
+//   {
+//     network: "facebook",
+//     profil: "/massinart.jpg",
+//     username: "massinart.ma",
+//     name: "Massinart",
+//     followers: 8800,
+//     er: 2.1,
+//     avgEngage: 12000,
+//     avgViews: 150000,
+//     metrics: "83.7",
+//     growth: 4.5,
+//     activity: 8,
+//   },
+//   {
+//     network: "youtube",
+//     profil: "/massinart.jpg",
+//     username: "massinart.ma",
+//     name: "Massinart",
+//     followers: 2350,
+//     er: 3.2,
+//     avgEngage: 5000,
+//     avgViews: 200000,
+//     metrics: "88.1",
+//     growth: 12.8,
+//     activity: 4,
+//   },
+// ];
 
 const AudienceReport = () => {
 
@@ -163,7 +163,7 @@ const AudienceReport = () => {
 
   useEffect((): void => {
     const fetchData = async (): Promise<void> => {
-      const response: any = await v1Api.get('/audience');
+      const response: any = await v1Api.get('/dashboard/audience');
       setNetworkData(response?.data?.networks);
       setAudienceData(response?.data?.audience);
     };
@@ -295,7 +295,7 @@ const AudienceReport = () => {
             {audienceData.countries && (
               <CountriesSplit
                 title="Abonnés par Pays"
-                data={JSON.parse(audienceData.countries.toString())}
+                data={typeof audienceData.countries === 'string' ? JSON.parse(audienceData.countries) : audienceData.countries}
                 tooltip={`Localisation de l’audience par pays.`}
               />
             )}
@@ -303,7 +303,7 @@ const AudienceReport = () => {
             {audienceData.cities && (
               <CountriesSplit
                 title="Abonnés par Ville"
-                data={JSON.parse(audienceData.cities.toString())}
+                data={typeof audienceData.cities === 'string' ? JSON.parse(audienceData.cities) : audienceData.cities}
                 tooltip={`Localisation de l’audience par ville`}
               />
             )}
@@ -315,12 +315,12 @@ const AudienceReport = () => {
                   {audienceData.interest && (
                     <Interset
                       title="Affinité d&apos;Intérêt de l&apos;Audience"
-                      data={JSON.parse(audienceData.interest.toString())}
+                      data={typeof audienceData.interest === 'string' ? JSON.parse(audienceData.interest) : audienceData.interest}
                     />
                   )}
 
                 {audienceData.language && JSON.stringify(audienceData.language) !== "{}" && (
-                  <ChartLangage data={JSON.parse(audienceData.language.toString())} />
+                  <ChartLangage data={typeof audienceData.language === 'string' ? JSON.parse(audienceData.language) : audienceData.language} />
                 )}
               </div>
             </div>

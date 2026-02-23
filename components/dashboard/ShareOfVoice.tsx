@@ -20,17 +20,23 @@ import Image from "next/image";
 
 export const description = "A radar chart with dots";
 
-const chartData = [
-  { month: "wall art", desktop: 186, fill: "#9c0274" },
-  { month: "لوحة فنية", desktop: 305, fill: "#ea1c80" },
-  { month: "art marocain", desktop: 237, fill: "#8376ce" },
-  { month: "déco maison", desktop: 273, fill: "#aea6cf" },
-  { month: "decorative painting", desktop: 209, fill: "#ffbf26" },
-  { month: "لوحات", desktop: 214, fill: "#ff0c00" },
+// Fallback color palette
+const colorPalette = [
+  "#9c0274", "#ea1c80", "#8376ce", "#aea6cf", "#ffbf26", "#ff0c00",
+  "#2dbaf6", "#06b6d4", "#8b5cf6", "#ec4899", "#64748b", "#0f172a"
 ];
 
+function getChartDataFromApi(data: any) {
+  if (!data || !Array.isArray(data.mentionsByKeyword)) return [];
+  return data.mentionsByKeyword.slice(0, 5).map((item: any, idx: number) => ({
+    keyword: item.keyword,
+    mentions: item.count,
+    fill: colorPalette[idx % colorPalette.length],
+  }));
+}
+
 const chartConfig = {
-  desktop: {
+  mentions: {
     label: "Mentions",
     color: "#2dbaf6",
   },
@@ -41,10 +47,15 @@ interface SectionCardsProps {
   data: any;
 }
 
+
 function ShareOfVoice({ filters, data }: SectionCardsProps) {
   const [showInsight, setShowInsight] = useState(false);
 
-  const total = chartData.reduce((sum, item) => sum + item.desktop, 0);
+  // Use dynamic chart data from API response
+  const chartData = getChartDataFromApi(data);
+  const total = Array.isArray(chartData)
+    ? chartData.reduce((sum, item) => sum + (item.mentions || 0), 0)
+    : 0;
 
   return (
     <Card className="flex flex-col relative">
@@ -68,8 +79,8 @@ function ShareOfVoice({ filters, data }: SectionCardsProps) {
             />
             <Pie
               data={chartData}
-              dataKey="desktop"
-              nameKey="month"
+              dataKey="mentions"
+              nameKey="keyword"
               cx="50%"
               cy="50%"
               innerRadius={65}
@@ -84,9 +95,9 @@ function ShareOfVoice({ filters, data }: SectionCardsProps) {
           </PieChart>
         </ChartContainer>
         <div className="flex flex-wrap justify-center w-full items-center gap-3 my-2">
-          {chartData.map((item) => (
+          {chartData && chartData.length > 0 ? chartData.map((item: any) => (
             <div
-              key={item.month}
+              key={item.keyword}
               className="flex items-center text-sm px-2 py-1 whitespace-nowrap"
             >
               <div className="flex gap-2 items-center">
@@ -94,10 +105,10 @@ function ShareOfVoice({ filters, data }: SectionCardsProps) {
                   className="h-3 w-3 block rounded-full flex-shrink-0"
                   style={{ backgroundColor: `${item.fill}` }}
                 />
-                <p className="capitalize">{item.month}</p>
+                <p className="capitalize">{item.keyword}</p>
               </div>
             </div>
-          ))}
+          )) : <span className="text-gray-400">Aucune donnée</span>}
         </div>
       </CardContent>
       <div className="absolute bottom-4 left-6">
