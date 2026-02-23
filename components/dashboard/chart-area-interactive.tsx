@@ -93,14 +93,14 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
   let chartData: any[] = [];
   if (filters?.source && sourceKeyMap[filters.source]) {
     const key = sourceKeyMap[filters.source];
-    mentionsTotal = filteredMentions.reduce((sum, item) => sum + (item[key] ?? 0), 0);
+    mentionsTotal = filteredMentions.reduce((sum: number, item: any) => sum + (item[key] ?? 0), 0);
     mentionsAverage = filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
     chartData = filteredMentions.map((item: any) => ({
       date: item.date,
       [key]: item[key] ?? 0,
     }));
   } else {
-    mentionsTotal = filteredMentions.reduce((sum, item) => sum + item.total, 0);
+    mentionsTotal = filteredMentions.reduce((sum: number, item: any) => sum + (item.total ?? 0), 0);
     mentionsAverage = filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
     // Use dynamic chart data from API response and filter by date range
     const allChartData = getChartDataFromApi(data);

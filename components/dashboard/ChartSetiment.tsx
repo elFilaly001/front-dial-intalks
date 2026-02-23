@@ -42,9 +42,9 @@ const ChartSetiment = ({ filters, data }: SectionCardsProps) => {
   }
 
   // Calculate sentiment counts from filtered mentions
-  const positiveCount = filteredMentions.reduce((sum, item) => sum + (item.positive || 0), 0);
-  const neutralCount = filteredMentions.reduce((sum, item) => sum + (item.neutral || 0), 0);
-  const negativeCount = filteredMentions.reduce((sum, item) => sum + (item.negative || 0), 0);
+  const positiveCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.positive || 0), 0);
+  const neutralCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.neutral || 0), 0);
+  const negativeCount = filteredMentions.reduce((sum: number, item: any) => sum + (item.negative || 0), 0);
 
   const mentionsBySentimentChartData = [
     { sentiment: "positif", mentions: positiveCount, fill: "#40bb3c" },

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CategoriesFilter from "./CategoriesFilter";
 import GenderFilter from "./GenderFilter";
 import CountryFilter from "./CountryFilter";
@@ -9,13 +9,14 @@ import PageSize from "./PageSize";
 import Link from "next/link";
 
 const FiltersInfluencers = () => {
+  const [orderBy, setOrderBy] = useState<string | undefined>(undefined);
   return (
     <div className="flex gap-5 items-center">
       <div className="grid grid-cols-4 gap-5 items-center flex-1">
         <CategoriesFilter />
         <GenderFilter />
         <CountryFilter />
-        <OrderByFilter />
+        <OrderByFilter value={orderBy} onChange={setOrderBy} />
       </div>
       <div className="flex items-center gap-2.5">
         <PageSize />
