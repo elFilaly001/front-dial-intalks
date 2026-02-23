@@ -51,7 +51,7 @@ const Mentions = () => {
       setError(null);
       try {
         // Directly use the full API URL for now
-        const response = await v1Api.get("https://in-talks.hypeo-prod.xyz/api/v1/feeds");
+        const response = await v1Api.get("https://in-talks.hypeo-prod.xyz/api/v1/dashboard/feeds");
         setMentions(response.data.feeds || []);
       } catch (err: any) {
         setError("Erreur lors du chargement des mentions.");

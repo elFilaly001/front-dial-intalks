@@ -5,17 +5,11 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "../ui/chart";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import { useIsMobile } from "@/hooks/use-mobile";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
 import Image from "next/image";
-
 
 // Helper to get chart data from API response
 function getChartDataFromApi(data: any) {
@@ -26,10 +20,9 @@ function getChartDataFromApi(data: any) {
     positive: item.positive,
     negative: item.negative,
     neutral: item.neutral,
-    ...item // include all keys for source filtering
+    ...item, // include all keys for source filtering
   }));
 }
-
 
 const chartConfig = {
   visitors: {
@@ -55,22 +48,25 @@ interface SectionCardsProps {
   loading?: boolean;
 }
 
-
-const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => {
+const ChartAreaInteractive = ({
+  filters,
+  data,
+  loading,
+}: SectionCardsProps) => {
   const isMobile = useIsMobile();
   const [showInsight, setShowInsight] = useState(false);
 
   // Map filter values to dailyMentions keys
   const sourceKeyMap: Record<string, string> = {
-    'X': 'x',
-    'Facebook': 'facebook',
-    'Instagram': 'instagram',
-    'Tiktok': 'tiktok',
-    'TikTok': 'tiktok',
-    'Linkedin': 'linkedin',
-    'LinkedIn': 'linkedin',
-    'News': 'news',
-    'Youtube': 'youtube',
+    X: "x",
+    Facebook: "facebook",
+    Instagram: "instagram",
+    Tiktok: "tiktok",
+    TikTok: "tiktok",
+    Linkedin: "linkedin",
+    LinkedIn: "linkedin",
+    News: "news",
+    Youtube: "youtube",
   };
 
   // Get all daily mentions
@@ -93,15 +89,23 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
   let chartData: any[] = [];
   if (filters?.source && sourceKeyMap[filters.source]) {
     const key = sourceKeyMap[filters.source];
-    mentionsTotal = filteredMentions.reduce((sum, item) => sum + (item[key] ?? 0), 0);
-    mentionsAverage = filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
+    mentionsTotal = filteredMentions.reduce(
+      (sum: number, item: any) => sum + (item[key] ?? 0),
+      0,
+    );
+    mentionsAverage =
+      filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
     chartData = filteredMentions.map((item: any) => ({
       date: item.date,
       [key]: item[key] ?? 0,
     }));
   } else {
-    mentionsTotal = filteredMentions.reduce((sum, item) => sum + item.total, 0);
-    mentionsAverage = filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
+    mentionsTotal = filteredMentions.reduce(
+      (sum: number, item: any) => sum + (item.total ?? 0),
+      0,
+    );
+    mentionsAverage =
+      filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
     // Use dynamic chart data from API response and filter by date range
     const allChartData = getChartDataFromApi(data);
     chartData = allChartData;
@@ -174,16 +178,8 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
           <AreaChart data={chartData}>
             <defs>
               <linearGradient id="fillNeutral" x1="0" y1="0" x2="0" y2="1">
-                <stop
-                  offset="5%"
-                  stopColor="#9c0274"
-                  stopOpacity={0.6}
-                />
-                <stop
-                  offset="95%"
-                  stopColor="#ff0c00"
-                  stopOpacity={0.1}
-                />
+                <stop offset="5%" stopColor="#9c0274" stopOpacity={0.6} />
+                <stop offset="95%" stopColor="#ff0c00" stopOpacity={0.1} />
               </linearGradient>
             </defs>
             <CartesianGrid vertical={false} />
