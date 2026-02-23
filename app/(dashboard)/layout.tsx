@@ -191,7 +191,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 )}
               </div>
 
-              <UserProfile />
+              {/* <UserProfile /> */}
             </div>
 
             {/* Mobile View - Burger Menu */}

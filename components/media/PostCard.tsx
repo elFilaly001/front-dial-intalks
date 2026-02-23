@@ -43,7 +43,7 @@ const PostCard = ({
     return networkIcons[network] || "/media/instagram.png";
   };
 
-  const network = post.network || influencer?.network || "instagram";
+  const network = post.network.network || influencer?.network || "instagram";
   const networkIcon = getNetworkIcon(network);
   const { data: session } = useSession();
 
