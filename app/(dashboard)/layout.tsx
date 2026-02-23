@@ -211,19 +211,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     {/* User Profile Section */}
                     <div className="p-4 bg-gradient-to-br from-slate-50 to-slate-100 border-b">
                       <div className="flex items-center gap-3">
-                        <Avatar className="h-12 w-12 ring-2 ring-white shadow-sm">
+                        {/* <Avatar className="h-12 w-12 ring-2 ring-white shadow-sm">
                           <AvatarImage src="/auth/user-avatar.png" alt="User" className="object-cover" />
                           <AvatarFallback className="bg-gradient-to-br from-main/20 to-main/10 text-main font-semibold">
                             JD
                           </AvatarFallback>
-                        </Avatar>
-                        <div className="flex-1 min-w-0">
+                        </Avatar> */}
+                        {/* <div className="flex-1 min-w-0">
                           <p className="text-sm font-semibold text-slate-900 truncate">John Doe</p>
                           <p className="text-xs text-slate-500 truncate">john.doe@in-talks.ma</p>
                           <Badge className="mt-1 text-[9px] px-1.5 py-0 h-4 bg-amber-500 hover:bg-amber-600 text-white border-amber-400">
                             Propriétaire
                           </Badge>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
 

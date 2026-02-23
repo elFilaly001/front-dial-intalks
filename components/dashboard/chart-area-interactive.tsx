@@ -5,17 +5,11 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "../ui/chart";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import { useIsMobile } from "@/hooks/use-mobile";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
 import Image from "next/image";
-
 
 // Helper to get chart data from API response
 function getChartDataFromApi(data: any) {
@@ -26,9 +20,9 @@ function getChartDataFromApi(data: any) {
     positive: item.positive,
     negative: item.negative,
     neutral: item.neutral,
+    ...item, // include all keys for source filtering
   }));
 }
-
 
 const chartConfig = {
   visitors: {
@@ -54,10 +48,26 @@ interface SectionCardsProps {
   loading?: boolean;
 }
 
-
-const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => {
+const ChartAreaInteractive = ({
+  filters,
+  data,
+  loading,
+}: SectionCardsProps) => {
   const isMobile = useIsMobile();
   const [showInsight, setShowInsight] = useState(false);
+
+  // Map filter values to dailyMentions keys
+  const sourceKeyMap: Record<string, string> = {
+    X: "x",
+    Facebook: "facebook",
+    Instagram: "instagram",
+    Tiktok: "tiktok",
+    TikTok: "tiktok",
+    Linkedin: "linkedin",
+    LinkedIn: "linkedin",
+    News: "news",
+    Youtube: "youtube",
+  };
 
   // Get all daily mentions
   const allDailyMentions = data?.dailyMentions || [];
@@ -74,19 +84,57 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
   }
 
   // Calculate total mentions and daily average for the filtered period
-  const mentionsTotal = filteredMentions.reduce((sum, item) => sum + item.total, 0);
-  const mentionsAverage = filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
+  let mentionsTotal = 0;
+  let mentionsAverage = 0;
+  let chartData: any[] = [];
+  if (filters?.source && sourceKeyMap[filters.source]) {
+    const key = sourceKeyMap[filters.source];
+    mentionsTotal = filteredMentions.reduce(
+      (sum: number, item: any) => sum + (item[key] ?? 0),
+      0,
+    );
+    mentionsAverage =
+      filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
+    chartData = filteredMentions.map((item: any) => ({
+      date: item.date,
+      [key]: item[key] ?? 0,
+    }));
+  } else {
+    mentionsTotal = filteredMentions.reduce(
+      (sum: number, item: any) => sum + (item.total ?? 0),
+      0,
+    );
+    mentionsAverage =
+      filteredMentions.length > 0 ? mentionsTotal / filteredMentions.length : 0;
+    // Use dynamic chart data from API response and filter by date range
+    const allChartData = getChartDataFromApi(data);
+    chartData = allChartData;
+    if (filters?.dateRange?.from && filters?.dateRange?.to) {
+      const fromTime = new Date(filters.dateRange.from).setHours(0, 0, 0, 0);
+      const toTime = new Date(filters.dateRange.to).setHours(23, 59, 59, 999);
+      chartData = allChartData.filter((item: any) => {
+        const itemTime = new Date(item.date).getTime();
+        return itemTime >= fromTime && itemTime <= toTime;
+      });
+    }
+  }
 
-  // Use dynamic chart data from API response and filter by date range
-  const allChartData = getChartDataFromApi(data);
-  let chartData = allChartData;
-  if (filters?.dateRange?.from && filters?.dateRange?.to) {
-    const fromTime = new Date(filters.dateRange.from).setHours(0, 0, 0, 0);
-    const toTime = new Date(filters.dateRange.to).setHours(23, 59, 59, 999);
-    chartData = allChartData.filter((item: any) => {
-      const itemTime = new Date(item.date).getTime();
-      return itemTime >= fromTime && itemTime <= toTime;
-    });
+  // Determine which dataKey to use for the Area
+  let areaDataKey = "neutral";
+  let areaColor = "var(--color-neutral)";
+  if (filters?.source && sourceKeyMap[filters.source]) {
+    areaDataKey = sourceKeyMap[filters.source];
+    // Optionally, set a color for each source if you want
+    const colorMap: Record<string, string> = {
+      x: "#000000",
+      facebook: "#f97316",
+      instagram: "#ec4899",
+      tiktok: "#d946ef",
+      linkedin: "#0A66C2",
+      news: "#38bdf8",
+      youtube: "#FF0000",
+    };
+    areaColor = colorMap[areaDataKey] || "var(--color-neutral)";
   }
 
   return (
@@ -130,16 +178,8 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
           <AreaChart data={chartData}>
             <defs>
               <linearGradient id="fillNeutral" x1="0" y1="0" x2="0" y2="1">
-                <stop
-                  offset="5%"
-                  stopColor="#9c0274"
-                  stopOpacity={0.6}
-                />
-                <stop
-                  offset="95%"
-                  stopColor="#ff0c00"
-                  stopOpacity={0.1}
-                />
+                <stop offset="5%" stopColor="#9c0274" stopOpacity={0.6} />
+                <stop offset="95%" stopColor="#ff0c00" stopOpacity={0.1} />
               </linearGradient>
             </defs>
             <CartesianGrid vertical={false} />
@@ -175,50 +215,16 @@ const ChartAreaInteractive = ({ filters, data, loading }: SectionCardsProps) => 
             />
 
             <Area
-              dataKey="neutral"
+              dataKey={areaDataKey}
               type="natural"
               fill="url(#fillNeutral)"
-              stroke="var(--color-neutral)"
+              stroke={areaColor}
               stackId="a"
             />
           </AreaChart>
         </ChartContainer>
       </CardContent>
-      <div className="relative px-6 pb-4">
-        <div
-          className="text-sm text-black flex items-center gap-2 cursor-pointer"
-          onMouseEnter={() => setShowInsight(true)}
-          onMouseLeave={() => setShowInsight(false)}
-        >
-          <Image
-            src="/icons/IN-TALKS-logo.png-2.webp"
-            alt="IN-TALKS Logo"
-            width={22}
-            height={22}
-            style={{ display: "inline-block", verticalAlign: "middle" }}
-          />
-          <span
-            className="font-semibold"
-            style={{
-              background: 'linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              color: 'transparent',
-              display: 'inline-block',
-            }}
-          >
-            AI-Powered Insight
-          </span>
-        </div>
-        {showInsight && (
-          <div className="absolute bottom-full left-0 mb-2 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 max-w-md">
-            <p className="text-sm text-gray-700 dark:text-gray-300">
-              Les mentions globales ont augmenté de 14% par rapport à la période précédente. La moyenne quotidienne est de 120 (hausse de 13%). La série atteint un pic le 20 décembre avec 350 mentions. Le plus grand changement d&apos;un jour à l&apos;autre a été une baisse de 300 mentions entre le 20 et le 21 décembre.
-            </p>
-          </div>
-        )}
-      </div>
+      {/* ...existing code... */}
     </Card>
   );
 };

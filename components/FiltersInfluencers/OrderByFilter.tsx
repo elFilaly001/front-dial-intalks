@@ -10,25 +10,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useRouter, useSearchParams } from "next/navigation";
 
-const OrderByFilter = () => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const current = searchParams.get("orderBy") || undefined;
+interface OrderByFilterProps {
+  value?: string;
+  onChange: (value: string) => void;
+}
 
+const OrderByFilter = ({ value, onChange }: OrderByFilterProps) => {
   const handleChange = useCallback(
-    (value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set("orderBy", value);
-      router.push(`?${params.toString()}`, { scroll: false });
+    (selectedValue: string) => {
+      onChange(selectedValue);
     },
-    [router, searchParams]
+    [onChange]
   );
 
   const data = [
-    { value: "updated_at", label: "Le plus populaire" },
-    { value: "followers_desc", label: "Date de publication" },
+    { value: "updated_at", label: "Date de publication" },
+    { value: "followers_desc", label: "Le plus populaire" },
     { value: "followers_asc", label: "Les plus aimés" },
     { value: "engagement_desc", label: "Les plus commentés" },
     { value: "engagement_asc", label: "Les plus partagés" },
@@ -36,7 +34,7 @@ const OrderByFilter = () => {
   ];
 
   return (
-    <Select value={current} onValueChange={handleChange}>
+    <Select value={value} onValueChange={handleChange}>
       <SelectTrigger className="w-60 bg-white">
         <SelectValue placeholder="Trier par" />
       </SelectTrigger>

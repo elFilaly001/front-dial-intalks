@@ -82,7 +82,7 @@ const Sentiment = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await v1Api.get("/sentiment");
+        const response = await v1Api.get("/dashboard/sentiment");
         // Transform API data for TopLocationsWithSentiment
         if (response.data?.citiesBySentiment) {
           const cityData: CitySentiment[] = response.data.citiesBySentiment.map((item: any) => ({

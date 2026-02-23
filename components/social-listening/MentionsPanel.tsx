@@ -41,7 +41,7 @@ export default function MentionsPanel() {
 
     const fetchData = async () => {
       try {
-        const response = await v1Api.get("/mentions");
+        const response = await v1Api.get("/dashboard/mentions");
         setData(response.data);
         console.log("Mentions data:", response.data);
       } catch (error) {
