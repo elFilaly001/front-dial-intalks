@@ -11,59 +11,40 @@ import ToolTipsProvider from "../charts/ToolTipsProvider"
 import Image from "next/image"
 import formatNumber from "@/lib/numbers"
 
-const followersData = [
-  {
-    name: "YouTube",
-    value: 50000,
-    label: 50000,
-    color: "#FF0000",
-    icon: "/media/youtube.png",
-  },
-  {
-    name: "Instagram",
-    value: 150000,
-    label: 150000,
-    color: "#E4405F",
-    icon: "/media/instagram.png",
-  },
-  {
-    name: "TikTok",
-    value: 175000,
-    label: 175000,
-    color: "#000000",
-    icon: "/media/tiktok.png",
-  },
-  {
-    name: "Twitter",
-    value: 60000,
-    label: 60000,
-    color: "#1DA1F2",
-    icon: "/media/twitter.png",
-  },
-  {
-    name: "LinkedIn",
-    value: 20000,
-    label: 20000,
-    color: "#0077B5",
-    icon: "/media/linkedin.png",
-  },
-  {
-    name: "Facebook",
-    value: 110000,
-    label: 110000,
-    color: "#1877F2",
-    icon: "/media/facebook.png",
-  },
-].sort((a, b) => b.value - a.value)
+interface MentionsBySourceProps {
+  data?: Array<{ name: string; value: number }>
+}
 
-export default function MentionsBySource() {
+// Define a mapping for static properties
+const platformConfig: Record<string, { color: string; icon: string }> = {
+  YouTube: { color: "#FF0000", icon: "/media/youtube.png" },
+  Instagram: { color: "#E4405F", icon: "/media/instagram.png" },
+  TikTok: { color: "#000000", icon: "/media/tiktok.png" },
+  Twitter: { color: "#1DA1F2", icon: "/media/twitter.png" },
+  LinkedIn: { color: "#0077B5", icon: "/media/linkedin.png" },
+  Facebook: { color: "#1877F2", icon: "/media/facebook.png" },
+  News: { color: "#333333", icon: "/media/news.png" }, // Placeholder for News
+}
+
+export default function MentionsBySource({ data }: MentionsBySourceProps) {
   const [showInsight, setShowInsight] = React.useState(false)
   const [activeIndex, setActiveIndex] = React.useState<number | undefined>(undefined)
+
+  // Use provided data or fallback to empty array
+  const rawData = data || []
+
+  // Enrich data with static properties
+  const followersData = rawData.map(item => ({
+    ...item,
+    label: item.value,
+    ...platformConfig[item.name] || { color: "#CCCCCC", icon: "/media/default.png" } // Fallback for unknown platforms
+  })).sort((a, b) => b.value - a.value)
+
   const totalValue = followersData.reduce((sum, entry) => sum + entry.value, 0)
   const chartData = followersData.map((entry) => ({
     ...entry,
     totalValue,
-    percent: ((entry.value / totalValue) * 100).toFixed(1)
+    percent: totalValue > 0 ? ((entry.value / totalValue) * 100).toFixed(1) : "0.0"
   }))
 
   return (
