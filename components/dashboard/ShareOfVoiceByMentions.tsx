@@ -50,7 +50,7 @@ const palette = [
 
 // Default brands palette (used if parent doesn't pass rows)
 const defaultBrands = [
-    { label: 'Massinart', value: 35000, color: palette[0] },
+    { label: 'PCT', value: 35000, color: palette[0] },
     { label: 'Concurrent 1', value: 25000, color: palette[1] },
     { label: 'Concurrent 2', value: 18000, color: palette[2] },
     { label: 'Concurrent 3', value: 15000, color: palette[3] },
