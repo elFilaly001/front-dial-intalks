@@ -107,7 +107,7 @@ const palette = [
 
 // Company list used elsewhere in the dashboard (keeps parity with ShareOfVoiceByMention)
 const companies = [
-  { key: "Massinart", label: "Massinart", color: palette[0] },
+  { key: "PCT", label: "PCT", color: palette[0] },
   { key: "Concurrent1", label: "Concurrent 1", color: palette[1] },
   { key: "Concurrent2", label: "Concurrent 2", color: palette[2] },
   { key: "Concurrent3", label: "Concurrent 3", color: palette[3] },
@@ -123,12 +123,12 @@ const chartConfig: ChartConfig = companies.reduce((acc, c) => {
 // Example competitive data per source (values are illustrative — replace with real data)
 // Raw mention counts per source (these will be normalized to percentage shares per row)
 const rawData: Array<Record<string, number | string>> = [
-  { source: "Instagram", Massinart: 320, Concurrent1: 220, Concurrent2: 180, Concurrent3: 150, Concurrent4: 90, Concurrent5: 130 },
-  { source: "Facebook", Massinart: 280, Concurrent1: 200, Concurrent2: 180, Concurrent3: 180, Concurrent4: 160, Concurrent5: 160 },
-  { source: "Tiktok", Massinart: 350, Concurrent1: 250, Concurrent2: 200, Concurrent3: 120, Concurrent4: 80, Concurrent5: 80 },
-  { source: "X", Massinart: 250, Concurrent1: 200, Concurrent2: 150, Concurrent3: 200, Concurrent4: 200, Concurrent5: 200 },
-  { source: "Youtube", Massinart: 300, Concurrent1: 240, Concurrent2: 180, Concurrent3: 160, Concurrent4: 120, Concurrent5: 120 },
-  { source: "Presse", Massinart: 430, Concurrent1: 330, Concurrent2: 180, Concurrent3: 460, Concurrent4: 320, Concurrent5: 320 },
+  { source: "Instagram", PCT: 320, Concurrent1: 220, Concurrent2: 180, Concurrent3: 150, Concurrent4: 90, Concurrent5: 130 },
+  { source: "Facebook", PCT: 280, Concurrent1: 200, Concurrent2: 180, Concurrent3: 180, Concurrent4: 160, Concurrent5: 160 },
+  { source: "Tiktok", PCT: 350, Concurrent1: 250, Concurrent2: 200, Concurrent3: 120, Concurrent4: 80, Concurrent5: 80 },
+  { source: "X", PCT: 250, Concurrent1: 200, Concurrent2: 150, Concurrent3: 200, Concurrent4: 200, Concurrent5: 200 },
+  { source: "Youtube", PCT: 300, Concurrent1: 240, Concurrent2: 180, Concurrent3: 160, Concurrent4: 120, Concurrent5: 120 },
+  { source: "Presse", PCT: 430, Concurrent1: 330, Concurrent2: 180, Concurrent3: 460, Concurrent4: 320, Concurrent5: 320 },
 ];
 
 // Normalize counts into percentage shares per source (each row sums to ~100)
