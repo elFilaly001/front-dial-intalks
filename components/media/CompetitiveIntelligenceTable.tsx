@@ -363,19 +363,19 @@ const SAMPLE_NETWORKS: Network[] = [
     },
 
     // Massinart - all platforms
-    {
-        network: "instagram",
-        profil: "/pct.jpg",
-        username: "massinart_ma",
-        name: "Massinart",
-        followers: 48000,
-        er: 2.3,
-        avgEngage: 6500,
-        avgViews: 62000,
-        metrics: "71",
-        growth: 7.8,
-        activity: 14,
-    },
+    // {
+    //     network: "instagram",
+    //     profil: "/pct.jpg",
+    //     username: "massinart_ma",
+    //     name: "Massinart",
+    //     followers: 48000,
+    //     er: 2.3,
+    //     avgEngage: 6500,
+    //     avgViews: 62000,
+    //     metrics: "71",
+    //     growth: 7.8,
+    //     activity: 14,
+    // },
     {
         network: "facebook",
         profil: "/pct.jpg",
