@@ -21,7 +21,7 @@ const networks = [
   //   },
   {
     network: "facebook",
-    profil: "",
+    profil: "/Attijariwafa.png",
     username: "Attijariwafa bank",
     name: "Attijariwafa bank",
     followers: 420000,
@@ -60,7 +60,7 @@ const networks = [
   //   },
   {
     network: "youtube",
-    profil: "",
+    profil: "/Attijariwafa.png",
     username: "Attijariwafa bank",
     name: "Attijariwafa bank",
     followers: 12000,
@@ -73,7 +73,7 @@ const networks = [
   },
   {
     network: "linkedin",
-    profil: "",
+    profil: "/Attijariwafa.png",
     username: "Attijariwafa bank",
     name: "Attijariwafa bank",
     followers: 32000,
@@ -88,7 +88,7 @@ const networks = [
   // Concurrent 2 - all platforms
   {
     network: "instagram",
-    profil: "",
+    profil: "/cih.jpg",
     username: "cihbankma",
     name: "CIH BANK",
     followers: 72000,
@@ -101,7 +101,7 @@ const networks = [
   },
   {
     network: "facebook",
-    profil: "",
+    profil: "/cih.jpg",
     username: "CIH BANK",
     name: "CIH BANK",
     followers: 195000,
@@ -114,7 +114,7 @@ const networks = [
   },
   {
     network: "x",
-    profil: "",
+    profil: "/cih.jpg",
     username: "cihbank",
     name: "CIH BANK",
     followers: 11000,
@@ -140,7 +140,7 @@ const networks = [
   //   },
   {
     network: "youtube",
-    profil: "",
+    profil: "/cih.jpg",
     username: "CIH BANK",
     name: "CIH BANK",
     followers: 4200,
@@ -153,7 +153,7 @@ const networks = [
   },
   {
     network: "linkedin",
-    profil: "",
+    profil: "/cih.jpg",
     username: "CIH BANK",
     name: "CIH BANK",
     followers: 15000,
@@ -181,7 +181,7 @@ const networks = [
   //   },
   {
     network: "facebook",
-    profil: "",
+    profil: "/bp.jpg",
     username: "Banque Populaire",
     name: "Banque Centrale Populaire - BCP",
     followers: 142000,
@@ -194,7 +194,7 @@ const networks = [
   },
   {
     network: "x",
-    profil: "",
+    profil: "/bp.jpg",
     username: "Banque Populaire",
     name: "Banque Centrale Populaire - BCP",
     followers: 8500,
@@ -220,7 +220,7 @@ const networks = [
   //   },
   {
     network: "youtube",
-    profil: "",
+    profil: "/bp.jpg",
     username: "Banque Populaire du Maroc",
     name: "Banque Centrale Populaire - BCP",
     followers: 3100,
@@ -233,7 +233,7 @@ const networks = [
   },
   {
     network: "linkedin",
-    profil: "",
+    profil: "/bp.jpg",
     username: "Banque Centrale Populaire - BCP",
     name: "Banque Centrale Populaire - BCP",
     followers: 11000,
@@ -328,7 +328,7 @@ const networks = [
   // CDM - all platforms
   {
     network: "instagram",
-    profil: "/pct.jpg",
+    profil: "/credit-du-maroc.png",
     username: "credit_du_maroc",
     name: "Crédit du Maroc",
     followers: 48000,
@@ -341,7 +341,7 @@ const networks = [
   },
   {
     network: "facebook",
-    profil: "/pct.jpg",
+    profil: "/credit-du-maroc.png",
     username: "Crédit du Maroc",
     name: "Crédit du Maroc",
     followers: 125000,
@@ -354,7 +354,7 @@ const networks = [
   },
   {
     network: "linkedin",
-    profil: "/pct.jpg",
+    profil: "/credit-du-maroc.png",
     username: "CREDIT DU MAROC",
     name: "Crédit du Maroc",
     followers: 125000,
@@ -380,7 +380,7 @@ const networks = [
   // },
   {
     network: "youtube",
-    profil: "/pct.jpg",
+    profil: "/credit-du-maroc.png",
     username: "Crédit du Maroc Officiel",
     name: "Crédit du Maroc",
     followers: 2400,

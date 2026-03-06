@@ -68,27 +68,13 @@ interface CustomXAxisTickProps {
 }
 
 const CustomXAxisTick = ({ x = 0, y = 0, payload }: CustomXAxisTickProps) => {
-  const source = payload?.value || '';
+  const source = payload?.value || "";
   const logo = sourceLogos[source];
-  
+
   return (
     <g transform={`translate(${x},${y})`}>
-      {logo && (
-        <image
-          href={logo}
-          x={-40}
-          y={4}
-          width={16}
-          height={16}
-        />
-      )}
-      <text
-        x={-20}
-        y={16}
-        textAnchor="start"
-        fontSize={12}
-        fill="#666"
-      >
+      {logo && <image href={logo} x={-40} y={4} width={16} height={16} />}
+      <text x={-20} y={16} textAnchor="start" fontSize={12} fill="#666">
         {source}
       </text>
     </g>
@@ -97,10 +83,10 @@ const CustomXAxisTick = ({ x = 0, y = 0, payload }: CustomXAxisTickProps) => {
 
 // ShareOfVoice palette used across the dashboard
 const palette = [
-  "#9c0274", 
+  "#9c0274",
   "#ea1c80",
-  "#8376ce", 
-  "#aea6cf", 
+  "#8376ce",
+  "#aea6cf",
   "#ffbf26",
   "#ff0c00",
 ];
@@ -123,12 +109,30 @@ const chartConfig: ChartConfig = companies.reduce((acc, c) => {
 // Example competitive data per source (values are illustrative — replace with real data)
 // Raw mention counts per source (these will be normalized to percentage shares per row)
 const rawData: Array<Record<string, number | string>> = [
-  { source: "Instagram", CDM: 320, CIHBANK: 180, },
-  { source: "Facebook", CDM: 280, ATTIJARIWAFABANK: 200, CIHBANK: 180, BCP: 180},
+  { source: "Instagram", CDM: 320, CIHBANK: 180 },
+  {
+    source: "Facebook",
+    CDM: 280,
+    ATTIJARIWAFABANK: 200,
+    CIHBANK: 180,
+    BCP: 180,
+  },
   // { source: "Tiktok", CDM: 350, ATTIJARIWAFABANK: 250, CIHBANK: 200, BCP: 120, Concurrent4: 80, Concurrent5: 80 },
-  { source: "X", CIHBANK: 150, BCP: 200},
-  { source: "Youtube", CDM: 300, ATTIJARIWAFABANK: 240, CIHBANK: 180, BCP: 160},
-  { source: "LinkedIn", CDM: 430, ATTIJARIWAFABANK: 330, CIHBANK: 180, BCP: 460 },
+  { source: "X", CIHBANK: 150, BCP: 200 },
+  {
+    source: "Youtube",
+    CDM: 300,
+    ATTIJARIWAFABANK: 240,
+    CIHBANK: 180,
+    BCP: 160,
+  },
+  {
+    source: "LinkedIn",
+    CDM: 430,
+    ATTIJARIWAFABANK: 330,
+    CIHBANK: 180,
+    BCP: 460,
+  },
 ];
 
 // Normalize counts into percentage shares per source (each row sums to ~100)
@@ -141,9 +145,7 @@ export default function ShareOfVoiceBySourceCard() {
       <CardHeader className="items-center">
         <div className="flex items-center gap-2">
           <CardTitle>Part de Voix par Source</CardTitle>
-          <ToolTipsProvider
-            title="Affiche la répartition de la part de voix des marques selon les différentes sources (Instagram, Facebook, X, TikTok, YouTube, LinkedIn). Ce graphique met en évidence quelles plateformes génèrent le plus de mentions pour chaque marque, permettant d’identifier les canaux les plus performants et les dynamiques de visibilité."
-          />
+          <ToolTipsProvider title="Affiche la répartition de la part de voix des marques selon les différentes sources (Instagram, Facebook, X, TikTok, YouTube, LinkedIn). Ce graphique met en évidence quelles plateformes génèrent le plus de mentions pour chaque marque, permettant d’identifier les canaux les plus performants et les dynamiques de visibilité." />
         </div>
       </CardHeader>
 
@@ -167,7 +169,12 @@ export default function ShareOfVoiceBySourceCard() {
                 tick={<CustomXAxisTick />}
                 height={40}
               />
-              <YAxis type="number" tickLine={false} axisLine={false} width={70} />
+              <YAxis
+                type="number"
+                tickLine={false}
+                axisLine={false}
+                width={70}
+              />
               <ChartTooltip content={<CustomTooltip />} />
               <ChartLegend content={<ChartLegendContent />} />
 
@@ -193,11 +200,18 @@ export default function ShareOfVoiceBySourceCard() {
               onMouseEnter={() => setShowInsight(true)}
               onMouseLeave={() => setShowInsight(false)}
             >
-              <Image src="/icons/IN-TALKS-logo.png-2.webp" alt="IN-TALKS" width={22} height={22} className="inline-block align-middle" />
+              <Image
+                src="/icons/IN-TALKS-logo.png-2.webp"
+                alt="IN-TALKS"
+                width={22}
+                height={22}
+                className="inline-block align-middle"
+              />
               <span
                 className="font-semibold"
                 style={{
-                  background: "linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
+                  background:
+                    "linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -212,7 +226,13 @@ export default function ShareOfVoiceBySourceCard() {
             {showInsight && (
               <div className="absolute bottom-full left-0 mb-2 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 w-auto min-w-80 max-w-xl">
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Instagram and Facebook drive the largest volumes for art and decor brands, while Massinart maintains strong presence across all channels. Use the stacked view to identify platform-specific strengths for your interior design and art collection campaigns.
+                  Crédit du Maroc affiche la présence la plus diversifiée,
+                  dominant sur Instagram (320), Facebook (280) et YouTube (300).
+                  Sur LinkedIn, la Banque Populaire prend la tête avec 460
+                  mentions, suivie de près par CDM (430) et Attijariwafa Bank
+                  (330), ce qui reflète un fort engagement B2B. CIH Bank est la
+                  seule marque présente sur X, signalant une opportunité de
+                  différenciation sur cette plateforme pour les concurrents.
                 </p>
               </div>
             )}

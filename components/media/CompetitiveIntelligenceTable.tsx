@@ -170,20 +170,17 @@ const CompetitiveIntelligenceTable = ({
     };
   }, [showSourceMenu]);
 
-  // merge incoming networks with sampleNetworks but avoid duplicates by username
+  // merge incoming networks with sampleNetworks but avoid duplicates by network+username
   const mergedNetworks = useMemo(() => {
     const map = new Map<string, Network>();
     // add provided networks first
     (networks || []).forEach((n) => {
-      if (n && n.username) map.set(n.username, n);
+      if (n && n.username) map.set(`${n.network}:${n.username}`, n);
     });
-    // add samples if they don't exist
-    // SAMPLE_NETWORKS.forEach((s) => {
-    //     if (!map.has(s.username)) map.set(s.username, s);
-    // });
     // add custom competitors
     customCompetitors.forEach((c) => {
-      if (!map.has(c.username)) map.set(c.username, c);
+      const key = `${c.network}:${c.username}`;
+      if (!map.has(key)) map.set(key, c);
     });
     return Array.from(map.values());
   }, [networks, customCompetitors]);
