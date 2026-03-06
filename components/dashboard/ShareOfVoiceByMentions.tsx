@@ -50,12 +50,12 @@ const palette = [
 
 // Default brands palette (used if parent doesn't pass rows)
 const defaultBrands = [
-    { label: 'PCT', value: 35000, color: palette[0] },
-    { label: 'Concurrent 1', value: 25000, color: palette[1] },
-    { label: 'Concurrent 2', value: 18000, color: palette[2] },
-    { label: 'Concurrent 3', value: 15000, color: palette[3] },
-    { label: 'Concurrent 4', value: 9000, color: palette[4] },
-    { label: 'Concurrent 5', value: 12000, color: palette[5] },
+  { label: "Crédit du Maroc", value: 35000, color: palette[0] },
+  { label: "ATTIJARIWAFA BANK", value: 25000, color: palette[1] },
+  { label: "CIH BANK", value: 18000, color: palette[2] },
+  { label: "Banque Populaire", value: 15000, color: palette[3] },
+//   { label: "Concurrent 4", value: 9000, color: palette[4] },
+//   { label: "Concurrent 5", value: 12000, color: palette[5] },
 ];
 
 // Sentiment breakdowns for the five Moroccan competitors (positive / negative).

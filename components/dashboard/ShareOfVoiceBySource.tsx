@@ -97,22 +97,22 @@ const CustomXAxisTick = ({ x = 0, y = 0, payload }: CustomXAxisTickProps) => {
 
 // ShareOfVoice palette used across the dashboard
 const palette = [
-  "#9c0274", // green
+  "#9c0274", 
   "#ea1c80",
-  "#8376ce", // red
-  "#aea6cf", // gray
+  "#8376ce", 
+  "#aea6cf", 
   "#ffbf26",
   "#ff0c00",
 ];
 
 // Company list used elsewhere in the dashboard (keeps parity with ShareOfVoiceByMention)
 const companies = [
-  { key: "PCT", label: "PCT", color: palette[0] },
-  { key: "Concurrent1", label: "Concurrent 1", color: palette[1] },
-  { key: "Concurrent2", label: "Concurrent 2", color: palette[2] },
-  { key: "Concurrent3", label: "Concurrent 3", color: palette[3] },
-  { key: "Concurrent4", label: "Concurrent 4", color: palette[4] },
-  { key: "Concurrent5", label: "Concurrent 5", color: palette[5] },
+  { key: "CDM", label: "CDM", color: palette[0] },
+  { key: "ATTIJARIWAFABANK", label: "ATTIJARIWAFA BANK", color: palette[1] },
+  { key: "CIHBANK", label: "CIH BANK", color: palette[2] },
+  { key: "BCP", label: "Banque Populaire", color: palette[3] },
+  // { key: "Concurrent4", label: "Concurrent 4", color: palette[4] },
+  // { key: "Concurrent5", label: "Concurrent 5", color: palette[5] },
 ];
 
 const chartConfig: ChartConfig = companies.reduce((acc, c) => {
@@ -123,12 +123,12 @@ const chartConfig: ChartConfig = companies.reduce((acc, c) => {
 // Example competitive data per source (values are illustrative — replace with real data)
 // Raw mention counts per source (these will be normalized to percentage shares per row)
 const rawData: Array<Record<string, number | string>> = [
-  { source: "Instagram", PCT: 320, Concurrent1: 220, Concurrent2: 180, Concurrent3: 150, Concurrent4: 90, Concurrent5: 130 },
-  { source: "Facebook", PCT: 280, Concurrent1: 200, Concurrent2: 180, Concurrent3: 180, Concurrent4: 160, Concurrent5: 160 },
-  { source: "Tiktok", PCT: 350, Concurrent1: 250, Concurrent2: 200, Concurrent3: 120, Concurrent4: 80, Concurrent5: 80 },
-  { source: "X", PCT: 250, Concurrent1: 200, Concurrent2: 150, Concurrent3: 200, Concurrent4: 200, Concurrent5: 200 },
-  { source: "Youtube", PCT: 300, Concurrent1: 240, Concurrent2: 180, Concurrent3: 160, Concurrent4: 120, Concurrent5: 120 },
-  { source: "Presse", PCT: 430, Concurrent1: 330, Concurrent2: 180, Concurrent3: 460, Concurrent4: 320, Concurrent5: 320 },
+  { source: "Instagram", CDM: 320, CIHBANK: 180, },
+  { source: "Facebook", CDM: 280, ATTIJARIWAFABANK: 200, CIHBANK: 180, BCP: 180},
+  // { source: "Tiktok", CDM: 350, ATTIJARIWAFABANK: 250, CIHBANK: 200, BCP: 120, Concurrent4: 80, Concurrent5: 80 },
+  { source: "X", CIHBANK: 150, BCP: 200},
+  { source: "Youtube", CDM: 300, ATTIJARIWAFABANK: 240, CIHBANK: 180, BCP: 160},
+  { source: "LinkedIn", CDM: 430, ATTIJARIWAFABANK: 330, CIHBANK: 180, BCP: 460 },
 ];
 
 // Normalize counts into percentage shares per source (each row sums to ~100)
