@@ -760,7 +760,32 @@ const CompetitiveIntelligenceTable = ({
       <DataTable
         columns={columns}
         data={displayedNetworks}
+        persistTableHead
         conditionalRowStyles={conditionalRowStyles}
+        noDataComponent={
+          <div className="flex flex-col items-center justify-center py-16 text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-12 w-12 mb-4 text-gray-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M9 17v-2a4 4 0 014-4h4M9 17H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v4"
+              />
+            </svg>
+            <p className="text-sm font-medium">
+              Aucune donnée disponible pour{" "}
+              <span className="capitalize font-semibold">
+                {selectedSource === "x" ? "X" : selectedSource}
+              </span>
+            </p>
+          </div>
+        }
       />
     </div>
   );
