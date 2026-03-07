@@ -15,10 +15,26 @@ interface Mention {
   snippet: string;
   source: string;
   type: string;
+  authorName?: string;
+  authorPic?: string;
 }
-const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDelete?: (id: string) => void; onUpdateSentiment?: (id: string, newType: string) => void }) => {
+const FeedCard = ({
+  feed,
+  onDelete,
+  onUpdateSentiment,
+}: {
+  feed: Mention;
+  onDelete?: (id: string) => void;
+  onUpdateSentiment?: (id: string, newType: string) => void;
+}) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const normalizedType = feed.type === "Article" ? "NEUTRAL" : feed.type;
+  const snippetRedundant =
+    feed.snippet && feed.title
+      ? feed.snippet
+          .toLowerCase()
+          .startsWith(feed.title.toLowerCase().slice(0, 30))
+      : false;
 
   return (
     <Card className="relative h-40 overflow-hidden">
@@ -33,12 +49,13 @@ const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDele
       <div className="absolute top-3 right-3">
         <Badge
           onClick={() => setShowDropdown(!showDropdown)}
-          className={`cursor-pointer flex items-center gap-1 ${normalizedType === "POSITIVE"
+          className={`cursor-pointer flex items-center gap-1 ${
+            normalizedType === "POSITIVE"
               ? "bg-green-500 text-white"
               : normalizedType === "NEGATIVE"
                 ? "bg-red-500 text-white"
                 : "bg-gray-500 text-white"
-            }`}
+          }`}
         >
           {normalizedType}
           <ChevronDown className="h-3 w-3" />
@@ -52,12 +69,13 @@ const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDele
                   onUpdateSentiment?.(feed.id, type);
                   setShowDropdown(false);
                 }}
-                className={`block w-full px-3 py-1 text-left hover:bg-gray-100 ${type === "POSITIVE"
+                className={`block w-full px-3 py-1 text-left hover:bg-gray-100 ${
+                  type === "POSITIVE"
                     ? "text-green-600"
                     : type === "NEGATIVE"
                       ? "text-red-600"
                       : "text-gray-600"
-                  }`}
+                }`}
               >
                 {type}
               </button>
@@ -86,7 +104,9 @@ const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDele
             rel="noopener noreferrer"
             className="flex flex-col gap-2"
           >
-            <h2 className="text-sm font-semibold line-clamp-1 leading-tight">{feed.title}</h2>
+            <h2 className="text-sm font-semibold line-clamp-1 leading-tight">
+              {feed.title}
+            </h2>
 
             <div className="flex items-center gap-3 text-xs text-gray-500">
               <div className="flex items-center gap-1">
@@ -96,14 +116,19 @@ const FeedCard = ({ feed, onDelete, onUpdateSentiment }: { feed: Mention; onDele
               <div className="flex items-center gap-1">
                 <Image
                   src={`/media/${feed.source.toLowerCase()}.png`}
-                  alt={`/media/${feed.source}.png`}
+                  alt={feed.source}
                   width={16}
                   height={16}
                 />
                 <span className="capitalize">{feed.source}</span>
               </div>
+              {feed.authorName && (
+                <span className="truncate max-w-[120px]">
+                  {feed.authorName}
+                </span>
+              )}
             </div>
-            {feed.snippet && (
+            {feed.snippet && !snippetRedundant && (
               <p className="text-xs text-gray-600 line-clamp-2 leading-tight">
                 {feed.snippet.slice(0, 120)}...
               </p>

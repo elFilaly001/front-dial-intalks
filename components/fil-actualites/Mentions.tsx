@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import FeedCard from "./FeedCard";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import ToolTipsProvider from "../charts/ToolTipsProvider";
@@ -25,14 +26,20 @@ import MentionPagination from "./MentionPagination";
 import ExportButton from "../ui/ExportButton";
 import { v1Api } from "@/services/axiosService";
 
-
-
 const Mentions = () => {
+  const searchParams = useSearchParams();
+  const currentPage = Number(searchParams.get("page") || 1);
+
   const [mentions, setMentions] = useState<any[]>([]);
+  const [pagination, setPagination] = useState({
+    page: 1,
+    pageSize: 10,
+    total: 0,
+    totalPages: 1,
+  });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
-
 
   const [form, setForm] = useState({
     link: "",
@@ -50,9 +57,29 @@ const Mentions = () => {
       setLoading(true);
       setError(null);
       try {
-        // Directly use the full API URL for now
-        const response = await v1Api.get("https://in-talks.hypeo-prod.xyz/api/v1/dashboard/feeds");
-        setMentions(response.data.feeds || []);
+        const response = await v1Api.get("/dashboard/feeds", {
+          params: { page: currentPage },
+        });
+
+        const data = response.data;
+        console.log("[Mentions] API response:", data);
+
+        let allMentions: any[] = [];
+        if (data.topMentionsData && typeof data.topMentionsData === "object") {
+          allMentions = (Object.values(data.topMentionsData) as any[][]).flat();
+        } else if (Array.isArray(data.feeds)) {
+          allMentions = data.feeds;
+        } else if (Array.isArray(data)) {
+          allMentions = data;
+        }
+
+        setMentions(allMentions);
+        setPagination({
+          page: data.page ?? currentPage,
+          pageSize: data.pageSize ?? 10,
+          total: data.total ?? allMentions.length,
+          totalPages: data.totalPages ?? 1,
+        });
       } catch (err: any) {
         setError("Erreur lors du chargement des mentions.");
       } finally {
@@ -60,7 +87,7 @@ const Mentions = () => {
       }
     };
     fetchMentions();
-  }, []);
+  }, [currentPage]);
 
   const handleDelete = (id: string) => {
     setMentions(mentions.filter((mention) => mention.id !== id));
@@ -69,13 +96,22 @@ const Mentions = () => {
   const handleUpdateSentiment = (id: string, newSentiment: string) => {
     setMentions(
       mentions.map((mention) =>
-        mention.id === id ? { ...mention, type: newSentiment } : mention
-      )
+        mention.id === id ? { ...mention, type: newSentiment } : mention,
+      ),
     );
   };
 
   // Prepare export data for mentions
-  const exportHeaders = ["ID", "Titre", "Lien", "Date", "Miniature", "Extrait", "Source", "Sentiment"];
+  const exportHeaders = [
+    "ID",
+    "Titre",
+    "Lien",
+    "Date",
+    "Miniature",
+    "Extrait",
+    "Source",
+    "Sentiment",
+  ];
   const exportRows = mentions.map((m) => [
     m.id,
     m.title,
@@ -100,16 +136,20 @@ const Mentions = () => {
               data={{
                 headers: exportHeaders,
                 rows: exportRows,
-                filename: `mentions-${new Date().toISOString().slice(0, 10)}`
+                filename: `mentions-${new Date().toISOString().slice(0, 10)}`,
               }}
             />
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
-                <Button size="sm" variant="outline">Ajouter une mention</Button>
+                <Button size="sm" variant="outline">
+                  Ajouter une mention
+                </Button>
               </DialogTrigger>
               <DialogContent className="w-full max-w-5xl">
                 <DialogHeader>
-                  <DialogTitle className="text-center">Ajouter une mention</DialogTitle>
+                  <DialogTitle className="text-center">
+                    Ajouter une mention
+                  </DialogTitle>
                 </DialogHeader>
                 <div className="grid grid-cols-1 gap-3 mt-2">
                   <label className="text-sm">Link</label>
@@ -122,14 +162,18 @@ const Mentions = () => {
                   <Input
                     placeholder="Titre de la mention"
                     value={form.title}
-                    onChange={(e) => setForm({ ...form, title: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, title: e.target.value })
+                    }
                   />
                   <label className="text-sm">Snippet</label>
                   <textarea
                     placeholder="Snippet"
                     className="min-h-[80px] resize-y rounded-md border bg-transparent px-3 py-2 text-base"
                     value={form.snippet}
-                    onChange={(e) => setForm({ ...form, snippet: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, snippet: e.target.value })
+                    }
                   />
                   <div className="grid grid-cols-3 gap-3">
                     <div>
@@ -137,12 +181,18 @@ const Mentions = () => {
                       <Input
                         placeholder="Source"
                         value={form.source}
-                        onChange={(e) => setForm({ ...form, source: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, source: e.target.value })
+                        }
                       />
                     </div>
                     <div>
                       <label className="text-sm">Sentiment</label>
-                      <Select onValueChange={(val) => setForm({ ...form, sentiment: val })}>
+                      <Select
+                        onValueChange={(val) =>
+                          setForm({ ...form, sentiment: val })
+                        }
+                      >
                         <SelectTrigger>
                           <SelectValue placeholder="Sentiment" />
                         </SelectTrigger>
@@ -158,7 +208,9 @@ const Mentions = () => {
                       <Input
                         type="date"
                         value={form.date}
-                        onChange={(e) => setForm({ ...form, date: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, date: e.target.value })
+                        }
                       />
                     </div>
                   </div>
@@ -166,43 +218,53 @@ const Mentions = () => {
                     <div className="flex items-center gap-2">
                       <Checkbox
                         checked={form.notify}
-                        onCheckedChange={(val) => setForm({ ...form, notify: !!val })}
+                        onCheckedChange={(val) =>
+                          setForm({ ...form, notify: !!val })
+                        }
                       />
-                      <span className="text-sm">Send the notification by email & Whatsapp</span>
+                      <span className="text-sm">
+                        Send the notification by email & Whatsapp
+                      </span>
                     </div>
                   </div>
                 </div>
                 <DialogFooter>
                   <div className="flex w-full gap-2">
-                    <Button className="w-full bg-main" size="sm" onClick={() => {
-                      // minimal validation
-                      if (!form.title || !form.snippet) {
-                        // simple client-side guard
-                        return;
-                      }
-                      const newMention = {
-                        id: Date.now().toString(),
-                        title: form.title,
-                        link: form.link || "#",
-                        postedDate: form.date,
-                        thumbnail: form.thumbnail || "/mentions/glovo.webp",
-                        snippet: form.snippet,
-                        source: form.source || "unknown",
-                        type: form.sentiment || "Article",
-                      };
-                      setMentions((prev) => [newMention, ...prev]);
-                      setForm({
-                        link: "",
-                        title: "",
-                        snippet: "",
-                        source: "",
-                        sentiment: "",
-                        date: new Date().toISOString().slice(0, 10),
-                        thumbnail: "",
-                        notify: false,
-                      });
-                      setOpen(false);
-                    }}>Ajouter</Button>
+                    <Button
+                      className="w-full bg-main"
+                      size="sm"
+                      onClick={() => {
+                        // minimal validation
+                        if (!form.title || !form.snippet) {
+                          // simple client-side guard
+                          return;
+                        }
+                        const newMention = {
+                          id: Date.now().toString(),
+                          title: form.title,
+                          link: form.link || "#",
+                          postedDate: form.date,
+                          thumbnail: form.thumbnail || "/mentions/glovo.webp",
+                          snippet: form.snippet,
+                          source: form.source || "unknown",
+                          type: form.sentiment || "Article",
+                        };
+                        setMentions((prev) => [newMention, ...prev]);
+                        setForm({
+                          link: "",
+                          title: "",
+                          snippet: "",
+                          source: "",
+                          sentiment: "",
+                          date: new Date().toISOString().slice(0, 10),
+                          thumbnail: "",
+                          notify: false,
+                        });
+                        setOpen(false);
+                      }}
+                    >
+                      Ajouter
+                    </Button>
                   </div>
                 </DialogFooter>
               </DialogContent>
@@ -216,16 +278,23 @@ const Mentions = () => {
             <div className="text-center py-8">Chargement des mentions...</div>
           ) : error ? (
             <div className="text-center text-red-500 py-8">{error}</div>
+          ) : mentions.length === 0 ? (
+            <div className="text-center text-gray-400 py-8">
+              Aucune mention trouvée.
+            </div>
           ) : (
             mentions.map((mention) => (
-              <FeedCard key={mention.id} feed={mention} onDelete={handleDelete} onUpdateSentiment={handleUpdateSentiment} />
+              <FeedCard
+                key={mention.id}
+                feed={mention}
+                onDelete={handleDelete}
+                onUpdateSentiment={handleUpdateSentiment}
+              />
             ))
           )}
         </div>
       </CardContent>
-      <MentionPagination
-        pagination={{ page: 1, pageSize: 10, total: 300, totalPages: 30 }}
-      />
+      <MentionPagination pagination={pagination} />
     </Card>
   );
 };
