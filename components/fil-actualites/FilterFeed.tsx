@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React, { useCallback, useState } from "react";
@@ -16,23 +14,44 @@ import {
   SelectLabel,
   SelectItem,
 } from "@/components/ui/select";
-import { Button } from "../ui/button";
-import { Filter, RotateCcw, Search } from "lucide-react";
-import Link from "next/link";
+import { Search } from "lucide-react";
 import { Input } from "../ui/input";
 import Image from "next/image";
 import { CompactDatePicker } from "../ui/CompactDatePicker";
 
 const FilterFeed = () => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const searchValue = searchParams.get("search") ?? "";
+
+  const handleSearch = useCallback(
+    (value: string) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (value) {
+        params.set("search", value);
+      } else {
+        params.delete("search");
+      }
+      router.push(`?${params.toString()}`, { scroll: false });
+    },
+    [router, searchParams],
+  );
+
   return (
     <div className="flex flex-col gap-5  sticky top-5 overflow-y-auto">
       <Card>
         <CardHeader>
-          <CardTitle className="font-semibold">Rechercher une mention</CardTitle>
+          <CardTitle className="font-semibold">
+            Rechercher une mention
+          </CardTitle>
         </CardHeader>
         <CardContent className=" ">
           <div className="flex justify-center items-center relative w-full">
-            <Input placeholder="Rechercher dans les mentions" />
+            <Input
+              placeholder="Rechercher dans les mentions"
+              defaultValue={searchValue}
+              onChange={(e) => handleSearch(e.target.value)}
+            />
             <Search className=" size-4 absolute right-3 text-gray-700 transform -translate-y-1/2 top-1/2" />
           </div>
         </CardContent>
@@ -44,25 +63,6 @@ const FilterFeed = () => {
       {/* <FilterCity /> */}
       <FilterPeriod />
       {/* <FilterLangue /> */}
-      <div className="bg-white border rounded-md p-5 flex gap-2">
-        <Button
-          asChild
-          className="bg-main border hover:bg-transparent border-main hover:text-main flex-1"
-        >
-          <Link href={"/social-listening"}>
-            <Filter />
-            Filtrer
-          </Link>
-        </Button>
-        <Button
-          asChild
-          className="bg-transparent hover:bg-main text-main border border-main hover:text-white"
-        >
-          <Link href={"/social-listening"}>
-            <RotateCcw />
-          </Link>
-        </Button>
-      </div>
     </div>
   );
 };
@@ -79,7 +79,7 @@ const OrderBy = () => {
       params.set("orderBy", value);
       router.push(`?${params.toString()}`, { scroll: false });
     },
-    [router, searchParams]
+    [router, searchParams],
   );
 
   return (
@@ -228,11 +228,10 @@ const FilterSentiment = () => {
 
 // ---------------- FILTER PERIOD ----------------
 const FilterPeriod = () => {
-
   const [dateRange, setDateRange] = useState({
-        from: undefined as Date | undefined,
-        to: undefined as Date | undefined,
-      });
+    from: undefined as Date | undefined,
+    to: undefined as Date | undefined,
+  });
   return (
     <Card>
       <CardHeader>
@@ -240,9 +239,9 @@ const FilterPeriod = () => {
       </CardHeader>
       <CardContent>
         <CompactDatePicker
-                          dateRange={dateRange}
-                          onDateRangeChange={setDateRange}
-                        />
+          dateRange={dateRange}
+          onDateRangeChange={setDateRange}
+        />
       </CardContent>
     </Card>
   );
@@ -369,7 +368,7 @@ const FilterPeriod = () => {
 //         <CardTitle className=" font-semibold">Ville</CardTitle>
 //       </CardHeader>
 //       <CardContent>
-        
+
 //                         <Select>
 //                           <SelectTrigger className="w-full bg-white">
 //                             <SelectValue placeholder="Par ville" />

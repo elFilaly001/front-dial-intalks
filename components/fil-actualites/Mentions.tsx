@@ -29,6 +29,12 @@ import { v1Api } from "@/services/axiosService";
 const Mentions = () => {
   const searchParams = useSearchParams();
   const currentPage = Number(searchParams.get("page") || 1);
+  const selectedSources =
+    searchParams.get("sources")?.split(",").filter(Boolean) ?? [];
+  const selectedSentiments =
+    searchParams.get("sentiments")?.split(",").filter(Boolean) ?? [];
+  const orderBy = searchParams.get("orderBy") ?? "";
+  const searchQuery = (searchParams.get("search") ?? "").toLowerCase().trim();
 
   const [mentions, setMentions] = useState<any[]>([]);
   const [pagination, setPagination] = useState({
@@ -89,6 +95,47 @@ const Mentions = () => {
     fetchMentions();
   }, [currentPage]);
 
+  const filteredMentions = React.useMemo(() => {
+    let result = [...mentions];
+
+    if (searchQuery) {
+      result = result.filter(
+        (m) =>
+          (m.title ?? "").toLowerCase().includes(searchQuery) ||
+          (m.snippet ?? "").toLowerCase().includes(searchQuery) ||
+          (m.source ?? "").toLowerCase().includes(searchQuery),
+      );
+    }
+
+    if (selectedSources.length > 0) {
+      result = result.filter((m) =>
+        selectedSources.some(
+          (s) => s.toLowerCase() === (m.source ?? "").toLowerCase(),
+        ),
+      );
+    }
+
+    if (selectedSentiments.length > 0) {
+      result = result.filter((m) =>
+        selectedSentiments.includes(m.type === "Article" ? "NEUTRAL" : m.type),
+      );
+    }
+
+    if (orderBy === "asc") {
+      result.sort(
+        (a, b) =>
+          new Date(a.postedDate).getTime() - new Date(b.postedDate).getTime(),
+      );
+    } else if (orderBy === "desc") {
+      result.sort(
+        (a, b) =>
+          new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime(),
+      );
+    }
+
+    return result;
+  }, [mentions, selectedSources, selectedSentiments, orderBy, searchQuery]);
+
   const handleDelete = (id: string) => {
     setMentions(mentions.filter((mention) => mention.id !== id));
   };
@@ -112,7 +159,7 @@ const Mentions = () => {
     "Source",
     "Sentiment",
   ];
-  const exportRows = mentions.map((m) => [
+  const exportRows = filteredMentions.map((m) => [
     m.id,
     m.title,
     m.link,
@@ -278,12 +325,12 @@ const Mentions = () => {
             <div className="text-center py-8">Chargement des mentions...</div>
           ) : error ? (
             <div className="text-center text-red-500 py-8">{error}</div>
-          ) : mentions.length === 0 ? (
+          ) : filteredMentions.length === 0 ? (
             <div className="text-center text-gray-400 py-8">
               Aucune mention trouvée.
             </div>
           ) : (
-            mentions.map((mention) => (
+            filteredMentions.map((mention) => (
               <FeedCard
                 key={mention.id}
                 feed={mention}

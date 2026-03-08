@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "../ui/button";
 import ExportButton from "../ui/ExportButton";
-import {v1Api} from "@/services/axiosService";
+import { v1Api } from "@/services/axiosService";
 
 const media = [
   {
@@ -107,8 +107,6 @@ interface DataType {
   };
 }
 
-
-
 const PostsGrid = () => {
   const [source, setSource] = useState<string | undefined>(undefined);
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
@@ -120,7 +118,10 @@ const PostsGrid = () => {
     const sorted = [...posts];
     switch (orderBy) {
       case "updated_at":
-        return sorted.sort((a, b) => new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime());
+        return sorted.sort(
+          (a, b) =>
+            new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime(),
+        );
       case "followers_desc":
         return sorted.sort((a, b) => b.totalLikes - a.totalLikes);
       case "followers_asc":
@@ -139,7 +140,7 @@ const PostsGrid = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await v1Api.get('/dashboard/posts');
+        const response = await v1Api.get("/dashboard/posts");
         const data = response.data;
         const posts = data.posts.map((p: any) => ({
           ...p,
@@ -148,7 +149,6 @@ const PostsGrid = () => {
         }));
         data.posts = sortPosts(posts, orderBy);
         setPostsData(data);
-        
       } catch (error) {
         console.error("Failed to fetch posts data:", error);
       }
@@ -156,9 +156,36 @@ const PostsGrid = () => {
     fetchData();
   }, [orderBy]);
 
+  const labelToNetwork: Record<string, string> = {
+    Instagram: "instagram",
+    Youtube: "youtube",
+    Tiktok: "tiktok",
+    Facebook: "facebook",
+    Linkedin: "linkedin",
+    "X Platform": "x",
+  };
+
+  const filteredPosts =
+    !source || source === "Tous les réseaux sociaux"
+      ? (postsData?.posts ?? [])
+      : (postsData?.posts ?? []).filter(
+          (p) =>
+            (p.network?.network ?? "").toLowerCase() ===
+            (labelToNetwork[source] ?? source.toLowerCase()),
+        );
+
   // Prepare export data for posts
-  const exportHeaders = ["ID", "Légende", "URL", "Date", "Type", "Likes", "Commentaires", "Vues"];
-  const exportRows = (postsData?.posts ?? []).map((post) => [
+  const exportHeaders = [
+    "ID",
+    "Légende",
+    "URL",
+    "Date",
+    "Type",
+    "Likes",
+    "Commentaires",
+    "Vues",
+  ];
+  const exportRows = filteredPosts.map((post) => [
     post.id,
     post.caption,
     post.displayURL,
@@ -170,7 +197,7 @@ const PostsGrid = () => {
   ]);
 
   // Map posts data to table rows for PostsTable
-  const postsTableRows: PostRow[] = (postsData?.posts ?? []).map((post) => {
+  const postsTableRows: PostRow[] = filteredPosts.map((post) => {
     return {
       id: post.id,
       caption: post.caption,
@@ -186,7 +213,6 @@ const PostsGrid = () => {
 
   return (
     <div>
-
       <div className="">
         <h2 className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white inline-flex flex-col">
           Publication
@@ -197,7 +223,6 @@ const PostsGrid = () => {
         </h2>
       </div>
       <div className="">
-
         <div className="flex justify-between items-center pt-4 pb-4">
           {/* Left side: Export button */}
           <div className="flex items-center">
@@ -205,7 +230,7 @@ const PostsGrid = () => {
               data={{
                 headers: exportHeaders,
                 rows: exportRows,
-                filename: "publications"
+                filename: "publications",
               }}
             />
 
@@ -219,14 +244,16 @@ const PostsGrid = () => {
                 variant="outline"
                 size="sm"
                 onClick={() => setViewMode("grid")}
-                className={`rounded-r-none ${viewMode === "grid"
-                  ? "bg-main text-white border-main"
-                  : "text-gray-600"
-                  }`}
+                className={`rounded-r-none ${
+                  viewMode === "grid"
+                    ? "bg-main text-white border-main"
+                    : "text-gray-600"
+                }`}
               >
                 <LayoutGrid
-                  className={`h-4 w-4 ${viewMode === "grid" ? "text-white" : "text-gray-600"
-                    }`}
+                  className={`h-4 w-4 ${
+                    viewMode === "grid" ? "text-white" : "text-gray-600"
+                  }`}
                 />
               </Button>
 
@@ -234,14 +261,16 @@ const PostsGrid = () => {
                 variant="outline"
                 size="sm"
                 onClick={() => setViewMode("list")}
-                className={`rounded-l-none ${viewMode === "list"
-                  ? "bg-main text-white border-main"
-                  : "text-gray-600"
-                  }`}
+                className={`rounded-l-none ${
+                  viewMode === "list"
+                    ? "bg-main text-white border-main"
+                    : "text-gray-600"
+                }`}
               >
                 <List
-                  className={`h-4 w-4 ${viewMode === "list" ? "text-white" : "text-gray-600"
-                    }`}
+                  className={`h-4 w-4 ${
+                    viewMode === "list" ? "text-white" : "text-gray-600"
+                  }`}
                 />
               </Button>
             </div>
@@ -273,7 +302,7 @@ const PostsGrid = () => {
                               if (parent) {
                                 const svg = document.createElementNS(
                                   "http://www.w3.org/2000/svg",
-                                  "svg"
+                                  "svg",
                                 );
                                 svg.setAttribute("width", "20");
                                 svg.setAttribute("height", "20");
@@ -312,8 +341,8 @@ const PostsGrid = () => {
           <PostsTable posts={postsTableRows} />
         ) : (
           <div className={`grid grid-cols-4 gap-3`}>
-            {(postsData?.posts ?? []).length > 0 &&
-              (postsData!.posts as Post[]).map((post) => (
+            {filteredPosts.length > 0 &&
+              filteredPosts.map((post) => (
                 <PostCard key={post.id} post={post} influencer={influencer} />
               ))}
           </div>
